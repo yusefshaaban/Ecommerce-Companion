@@ -1,0 +1,32 @@
+Job Lots:
+________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = Below The Belt Ballers Duo Gift Set Fresh & Dry Balls Fresh & Cool 2 x 75ml BNIB, Rating = 64.04, Profit = £4.17, Accuracy Score = 61.9, Buy Listing Price = £11.98, Sell Price = £16.15, Web URL = https://www.ebay.co.uk/itm/397036588456?amdata=enc%3AAQAKAAAAoFkggFvd1GGDu0w3yXCmi1dpKaD6vQHeJp2hTkl3r1TOMcNECsIZVCALDTC6c3%2FS6oVk5p7HHuhcpYNwNvZXUX6KFeXuPK6Hdp3sruTSWrpxm4GY54oDUHZ5mZStVJYUTy9gTadORYdc32PT9uhmc7dd72gxWwrviOpDnenyYCII49drYU%2Bgcl0VJ0KRP8LjlLioe1n1u7soU3mBLm36Jho%3D
+
+
+Items in Each Job Lot:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = Below The Belt Ballers Duo Gift Set Fresh & Dry Balls Fresh & Cool 2 x 75ml BNIB, Rating = 64.04, Profit = £4.17, Accuracy Score = 61.9, Buy Listing Price = £11.98, Sell Price = £16.15, Web URL = https://www.ebay.co.uk/itm/397036588456?amdata=enc%3AAQAKAAAAoFkggFvd1GGDu0w3yXCmi1dpKaD6vQHeJp2hTkl3r1TOMcNECsIZVCALDTC6c3%2FS6oVk5p7HHuhcpYNwNvZXUX6KFeXuPK6Hdp3sruTSWrpxm4GY54oDUHZ5mZStVJYUTy9gTadORYdc32PT9uhmc7dd72gxWwrviOpDnenyYCII49drYU%2Bgcl0VJ0KRP8LjlLioe1n1u7soU3mBLm36Jho%3D
+    Items in Job Lot:
+    Item Name = Below The Belt Grooming For Men Fresh & Dry Balls Fresh 75 ml, Quantity = 1, Listing Price = £13.90, Sell Price = £9.20, Buyer Protection Fee = £0.80, Postage Price = £3.90, Accuracy Score = 61.97, Name Certainty = 96.0%
+    Item Name = Below The Belt Grooming For Men Fresh & Dry Balls Cool 75 ml, Quantity = 1, Listing Price = £11.08, Sell Price = £6.95, Buyer Protection Fee = £0.63, Postage Price = £3.50, Accuracy Score = 61.83, Name Certainty = 96.0%
+
+
+
+Products used to calculate item info:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = Below The Belt Ballers Duo Gift Set Fresh & Dry Balls Fresh & Cool 2 x 75ml BNIB, Rating = 64.04, Profit = £4.17, Accuracy Score = 61.9, Buy Listing Price = £11.98, Sell Price = £16.15, Web URL = https://www.ebay.co.uk/itm/397036588456?amdata=enc%3AAQAKAAAAoFkggFvd1GGDu0w3yXCmi1dpKaD6vQHeJp2hTkl3r1TOMcNECsIZVCALDTC6c3%2FS6oVk5p7HHuhcpYNwNvZXUX6KFeXuPK6Hdp3sruTSWrpxm4GY54oDUHZ5mZStVJYUTy9gTadORYdc32PT9uhmc7dd72gxWwrviOpDnenyYCII49drYU%2Bgcl0VJ0KRP8LjlLioe1n1u7soU3mBLm36Jho%3D
+    Items in Job Lot:
+    Item Name = Below The Belt Grooming For Men Fresh & Dry Balls Fresh 75 ml, Quantity = 1, Listing Price = £13.90, Sell Price = £9.20, Buyer Protection Fee = £0.80, Postage Price = £3.90, Accuracy Score = 61.97, Name Certainty = 96.0%
+        Products in Item:
+        Buy Price = £10.00, Postage Price = £3.90, Accuracy Score = 58.22, Web URL = https://www.ebay.co.uk/itm/226653264617?_skw=Below+The+Belt+Grooming+For+Men+Fresh+&hash=item34c5965ae9:g:soUAAeSwc3tn2gMr
+        Buy Price = £10.00, Postage Price = £3.90, Accuracy Score = 58.22, Web URL = https://www.ebay.co.uk/itm/326492640992?_skw=Below+The+Belt+Grooming+For+Men+Fresh+&hash=item4c047a56e0:g:D4wAAeSwNFln2gO3
+        Buy Price = £0.88, Postage Price = £3.90, Accuracy Score = 3.34, Web URL = https://www.ebay.co.uk/itm/326706266959?_skw=Below+The+Belt+Grooming+For+Men+Fresh+&hash=item4c1136034f:g:DFwAAOSwIH1nL6UN
+        Buy Price = £7.58, Postage Price = £3.50, Accuracy Score = 0.87, Web URL = https://www.ebay.co.uk/itm/146820712847?_skw=Below+The+Belt+Grooming+For+Men+Fresh+&hash=item222f32498f:g:FkMAAeSw4lJov1fy
+
+    Item Name = Below The Belt Grooming For Men Fresh & Dry Balls Cool 75 ml, Quantity = 1, Listing Price = £11.08, Sell Price = £6.95, Buyer Protection Fee = £0.63, Postage Price = £3.50, Accuracy Score = 61.83, Name Certainty = 96.0%
+        Products in Item:
+        Buy Price = £10.00, Postage Price = £3.90, Accuracy Score = 58.22, Web URL = https://www.ebay.co.uk/itm/326492640992?_skw=Below+The+Belt+Grooming+For+Men+Fresh+&hash=item4c047a56e0:g:D4wAAeSwNFln2gO3
+        Buy Price = £7.58, Postage Price = £3.50, Accuracy Score = 57.6, Web URL = https://www.ebay.co.uk/itm/146820712847?_skw=Below+The+Belt+Grooming+For+Men+Fresh+&hash=item222f32498f:g:FkMAAeSw4lJov1fy
+        Buy Price = £1.28, Postage Price = £3.50, Accuracy Score = 2.75, Web URL = https://www.ebay.co.uk/itm/326706266959?_skw=Below+The+Belt+Grooming+For+Men+Fresh+&hash=item4c1136034f:g:DFwAAOSwIH1nL6UN
+        Buy Price = £10.00, Postage Price = £3.90, Accuracy Score = 0.87, Web URL = https://www.ebay.co.uk/itm/226653264617?_skw=Below+The+Belt+Grooming+For+Men+Fresh+&hash=item34c5965ae9:g:soUAAeSwc3tn2gMr
+

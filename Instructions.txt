@@ -1,0 +1,16 @@
+Welcome to Ebay Companion!
+
+This program automatically estimates item prices using data from Ebay, and also can estimate prices of job lots on ebay. There are 3 ways to do this:
+
+1. Input the weblink of the job lot
+
+2. Input the image of the job lot
+
+3. Automatically search ebay for job lots
+
+
+
+Each job lot is saved in a text file with results outlining the following:
+
+The job lot name, rating (the higher this is the better the overall estimated profit and accuracy score is), the accuracy score (how accurate the joblot is, calculated by combining the item name certainty and price accuracy), buy price, estimated listing price
+The item name,

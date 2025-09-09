@@ -1,0 +1,85 @@
+Job Lots:
+________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = Below The Belt Ballers Duo Gift Set Fresh & Dry Balls Fresh & Cool 2 x 75ml BNIB, Rating = 18, Profit = £1.51, Accuracy Score = 51.85, Buy Listing Price = £11.98, Sell Price = £13.49, Web URL = https://www.ebay.co.uk/itm/397036588456?amdata=enc%3AAQAKAAAAoFkggFvd1GGDu0w3yXCmi1dpKaD6vQHeJp2hTkl3r1TOMcNECsIZVCALDTC6c3%2FS6oWmosacr8uBkLsPbmp3xiFNrKdVVFivmXZe6jHZ09a98ZaKO%2BK9PBYWldVtnAsKCxaqjke6CA8v7zG8VJmkNdlDFUUY0cW6eM5%2Byky7XYiNuEIA3%2BA8yD7CupaRNDKBf4Lg5dQLcuig7hZutHAfREE%3D
+2. Lot Name = 254 drum & bass/jungle/rave/hardcore job lot of vinyl records, Rating = 0, Profit = £-1000.16, Accuracy Score = 0, Buy Listing Price = £1000.16, Sell Price = £0.00, Web URL = https://www.ebay.co.uk/itm/376527214811
+
+
+Items in Each Job Lot:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = Below The Belt Ballers Duo Gift Set Fresh & Dry Balls Fresh & Cool 2 x 75ml BNIB, Rating = 18, Profit = £1.51, Accuracy Score = 51.85, Buy Listing Price = £11.98, Sell Price = £13.49, Web URL = https://www.ebay.co.uk/itm/397036588456?amdata=enc%3AAQAKAAAAoFkggFvd1GGDu0w3yXCmi1dpKaD6vQHeJp2hTkl3r1TOMcNECsIZVCALDTC6c3%2FS6oWmosacr8uBkLsPbmp3xiFNrKdVVFivmXZe6jHZ09a98ZaKO%2BK9PBYWldVtnAsKCxaqjke6CA8v7zG8VJmkNdlDFUUY0cW6eM5%2Byky7XYiNuEIA3%2BA8yD7CupaRNDKBf4Lg5dQLcuig7hZutHAfREE%3D
+    Items in Job Lot:
+    Item Name = Below The Belt Grooming Fresh & Dry Balls Fresh 75 ml, Quantity = 1, Listing Price = £9.99, Sell Price = £6.41, Buyer Protection Fee = £0.59, Postage Price = £2.99, Accuracy Score = 55.39, Name Certainty = 97.0%
+    Item Name = Below The Belt Grooming Fresh & Dry Balls Cool 75 ml, Quantity = 1, Listing Price = £12.67, Sell Price = £7.08, Buyer Protection Fee = £0.64, Postage Price = £4.95, Accuracy Score = 48.31, Name Certainty = 97.0%
+
+2. Lot Name = 254 drum & bass/jungle/rave/hardcore job lot of vinyl records, Rating = 0, Profit = £-1000.16, Accuracy Score = 0, Buy Listing Price = £1000.16, Sell Price = £0.00, Web URL = https://www.ebay.co.uk/itm/376527214811
+    Items in Job Lot:
+    Item Name = Raver Baby Raver Baby 12 inch vinyl, Quantity = 3, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 65.0%
+    Item Name = Nightbreed Pack of Wolves Pendulum and Matrix Remixes 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 95.0%
+    Item Name = Next Generation Records Next Generation Records 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 85.0%
+    Item Name = Nu Energy Nu Energy 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 90.0%
+    Item Name = Relentless Vinyl Relentless Vinyl 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 90.0%
+    Item Name = UK Hardcore UK Hardcore compilation 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 88.0%
+
+
+
+Products used to calculate item info:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = Below The Belt Ballers Duo Gift Set Fresh & Dry Balls Fresh & Cool 2 x 75ml BNIB, Rating = 18, Profit = £1.51, Accuracy Score = 51.85, Buy Listing Price = £11.98, Sell Price = £13.49, Web URL = https://www.ebay.co.uk/itm/397036588456?amdata=enc%3AAQAKAAAAoFkggFvd1GGDu0w3yXCmi1dpKaD6vQHeJp2hTkl3r1TOMcNECsIZVCALDTC6c3%2FS6oWmosacr8uBkLsPbmp3xiFNrKdVVFivmXZe6jHZ09a98ZaKO%2BK9PBYWldVtnAsKCxaqjke6CA8v7zG8VJmkNdlDFUUY0cW6eM5%2Byky7XYiNuEIA3%2BA8yD7CupaRNDKBf4Lg5dQLcuig7hZutHAfREE%3D
+    Items in Job Lot:
+    Item Name = Below The Belt Grooming Fresh & Dry Balls Fresh 75 ml, Quantity = 1, Listing Price = £9.99, Sell Price = £6.41, Buyer Protection Fee = £0.59, Postage Price = £2.99, Accuracy Score = 55.39, Name Certainty = 97.0%
+        Products in Item:
+        Buy Price = £7.00, Postage Price = £2.99, Accuracy Score = 35, Web URL = https://www.ebay.co.uk/itm/335657378481?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e26bd22b1:g:DaIAAOSwSzVnKnuF
+        Buy Price = £8.09, Postage Price = £2.99, Accuracy Score = 35, Web URL = https://www.ebay.co.uk/itm/286789870422?_skw=Below+The+Belt+Grooming+Fresh+&hash=item42c6022356:g:d4kAAeSwYH1osJ7~
+        Buy Price = £1.79, Postage Price = £2.99, Accuracy Score = 33.41, Web URL = https://www.ebay.co.uk/itm/326706266959?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4c1136034f:g:DFwAAOSwIH1nL6UN
+        Buy Price = £6.20, Postage Price = £2.99, Accuracy Score = 10, Web URL = https://www.ebay.co.uk/itm/326651552942?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4c0df324ae:g:jQcAAOSwbM1oVoOW
+        Buy Price = £9.68, Postage Price = £2.99, Accuracy Score = 10, Web URL = https://www.ebay.co.uk/itm/205415626655?_skw=Below+The+Belt+Grooming+Fresh+&hash=item2fd3b9b79f:g:lj0AAeSwUb1n-~IL
+        Buy Price = £31.25, Postage Price = £3.99, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/405088641962?_skw=Below+The+Belt+Grooming+Fresh+&hash=item5e512a23aa:g:V~cAAOSwdt1mjUEx
+        Buy Price = £10.18, Postage Price = £4.95, Accuracy Score = 0.97, Web URL = https://www.ebay.co.uk/itm/336167858630?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e452a71c6:g:FoAAAeSwMKZouv~T
+        Buy Price = £10.18, Postage Price = £4.95, Accuracy Score = 0.97, Web URL = https://www.ebay.co.uk/itm/336164659876?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e44f9a2a4:g:WZ0AAeSwF2xouwAe
+        Buy Price = £10.18, Postage Price = £4.95, Accuracy Score = 0.85, Web URL = https://www.ebay.co.uk/itm/336167858659?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e452a71e3:g:b58AAeSwLWdouv~U
+        Buy Price = £10.18, Postage Price = £4.95, Accuracy Score = 0.1, Web URL = https://www.ebay.co.uk/itm/336167858670?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e452a71ee:g:0rMAAeSwb3houv~X
+
+    Item Name = Below The Belt Grooming Fresh & Dry Balls Cool 75 ml, Quantity = 1, Listing Price = £12.67, Sell Price = £7.08, Buyer Protection Fee = £0.64, Postage Price = £4.95, Accuracy Score = 48.31, Name Certainty = 97.0%
+        Products in Item:
+        Buy Price = £18.87, Postage Price = £4.95, Accuracy Score = 28.76, Web URL = https://www.ebay.co.uk/itm/326651552942?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4c0df324ae:g:jQcAAOSwbM1oVoOW
+        Buy Price = £7.72, Postage Price = £4.95, Accuracy Score = 28.76, Web URL = https://www.ebay.co.uk/itm/205415626655?_skw=Below+The+Belt+Grooming+Fresh+&hash=item2fd3b9b79f:g:lj0AAeSwUb1n-~IL
+        Buy Price = £10.18, Postage Price = £4.95, Accuracy Score = 27.45, Web URL = https://www.ebay.co.uk/itm/336167858670?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e452a71ee:g:0rMAAeSwb3houv~X
+        Buy Price = £31.25, Postage Price = £3.99, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/405088641962?_skw=Below+The+Belt+Grooming+Fresh+&hash=item5e512a23aa:g:V~cAAOSwdt1mjUEx
+        Buy Price = £10.18, Postage Price = £4.95, Accuracy Score = 0.78, Web URL = https://www.ebay.co.uk/itm/336167858630?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e452a71c6:g:FoAAAeSwMKZouv~T
+        Buy Price = £10.18, Postage Price = £4.95, Accuracy Score = 0.78, Web URL = https://www.ebay.co.uk/itm/336164659876?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e44f9a2a4:g:WZ0AAeSwF2xouwAe
+        Buy Price = £10.18, Postage Price = £4.95, Accuracy Score = 0.68, Web URL = https://www.ebay.co.uk/itm/336167858659?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e452a71e3:g:b58AAeSwLWdouv~U
+        Buy Price = £5.04, Postage Price = £4.95, Accuracy Score = 0.1, Web URL = https://www.ebay.co.uk/itm/335657378481?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4e26bd22b1:g:DaIAAOSwSzVnKnuF
+        Buy Price = £-0.17, Postage Price = £4.95, Accuracy Score = 0.1, Web URL = https://www.ebay.co.uk/itm/326706266959?_skw=Below+The+Belt+Grooming+Fresh+&hash=item4c1136034f:g:DFwAAOSwIH1nL6UN
+        Buy Price = £8.09, Postage Price = £2.99, Accuracy Score = 0.1, Web URL = https://www.ebay.co.uk/itm/286789870422?_skw=Below+The+Belt+Grooming+Fresh+&hash=item42c6022356:g:d4kAAeSwYH1osJ7~
+
+2. Lot Name = 254 drum & bass/jungle/rave/hardcore job lot of vinyl records, Rating = 0, Profit = £-1000.16, Accuracy Score = 0, Buy Listing Price = £1000.16, Sell Price = £0.00, Web URL = https://www.ebay.co.uk/itm/376527214811
+    Items in Job Lot:
+    Item Name = Raver Baby Raver Baby 12 inch vinyl, Quantity = 3, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 65.0%
+        Products in Item:
+
+    Item Name = Nightbreed Pack of Wolves Pendulum and Matrix Remixes 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 95.0%
+        Products in Item:
+
+    Item Name = Next Generation Records Next Generation Records 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 85.0%
+        Products in Item:
+
+    Item Name = Nu Energy Nu Energy 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 90.0%
+        Products in Item:
+
+    Item Name = Relentless Vinyl Relentless Vinyl 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 90.0%
+        Products in Item:
+        Buy Price = £15.99, Postage Price = £0.00, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/356124363220?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch+vinyl&hash=item52eaaa89d4:g:cYAAAOSwTztnA8Om
+        Buy Price = £67.91, Postage Price = £0.00, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/167504332761?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch+vinyl&hash=item27000947d9:g:LpwAAeSwc-FoHlMC
+        Buy Price = £770.91, Postage Price = £7.00, Accuracy Score = 0.97, Web URL = https://www.ebay.co.uk/itm/123922843650?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch+vinyl&hash=item1cda608802:g:lLYAAOSwl6RdkOIJ
+
+    Item Name = UK Hardcore UK Hardcore compilation 12 inch vinyl, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 88.0%
+        Products in Item:
+        Buy Price = £22.30, Postage Price = £0.00, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/197658256618?_skw=UK+Hardcore+UK+Hardcore+compilation+12+inch+vinyl&hash=item2e0559a4ea:g:vVQAAeSwCoJosvC7
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.82, Web URL = https://www.ebay.co.uk/itm/196945285771?_skw=UK+Hardcore+UK+Hardcore+compilation+12+inch+vinyl&hash=item2ddada928b:g:xWkAAOSwGR1ng-g1
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.82, Web URL = https://www.ebay.co.uk/itm/196945264057?_skw=UK+Hardcore+UK+Hardcore+compilation+12+inch+vinyl&hash=item2ddada3db9:g:tygAAOSwpgJng-RW
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.82, Web URL = https://www.ebay.co.uk/itm/196945257264?_skw=UK+Hardcore+UK+Hardcore+compilation+12+inch+vinyl&hash=item2ddada2330:g:rogAAOSwyxBng-NW
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.82, Web URL = https://www.ebay.co.uk/itm/196945244788?_skw=UK+Hardcore+UK+Hardcore+compilation+12+inch+vinyl&hash=item2ddad9f274:g:~3sAAOSw-tJng-Bg
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.82, Web URL = https://www.ebay.co.uk/itm/196945268383?_skw=UK+Hardcore+UK+Hardcore+compilation+12+inch+vinyl&hash=item2ddada4e9f:g:Y0kAAOSw44xng-Ut
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.82, Web URL = https://www.ebay.co.uk/itm/196945249420?_skw=UK+Hardcore+UK+Hardcore+compilation+12+inch+vinyl&hash=item2ddada048c:g:99YAAOSwn89ng-Fm
+        Buy Price = £27.37, Postage Price = £0.00, Accuracy Score = 0.5, Web URL = https://www.ebay.co.uk/itm/177385248863?_skw=UK+Hardcore+UK+Hardcore+compilation+12+inch+vinyl&hash=item294cfc185f:g:E2MAAeSw0P1ouAva
+

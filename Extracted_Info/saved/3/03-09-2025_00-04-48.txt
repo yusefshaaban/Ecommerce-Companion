@@ -1,0 +1,23 @@
+Job Lots:
+________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = 100 Item beauty bundle makeup Wholesale mixed joblot cosmetics limited stock new, Rating = 0, Profit = £-60.58, Accuracy Score = 0.0, Buy Price = £49.95, Sell Price = £0.0, Postage Price = £10.63, Web URL = https://www.ebay.co.uk/itm/315783669229?_skw=beauty+job+lot&hash=item49862c65ed:g:wEQAAOSw~JZm8zO~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UarQi1tzzNg9yAVp%2FW4CFL73OTb20d0AlPSh1JmATt9zbWSYvHm8c6noyBxwP5NgTRyVGlr689jO8nm1IrMiTdLw5LFkvgoUykatu1YPXCjAZaw8GwCr6jeJYLrOWhaWm9cVI6BOgp%2FDkTec20TNAVyHoGA%2B%2BzTlld%2Biqlq%2F91U1DAdtRTlaPOISnV1%2F5FMWopKvzqnbtb1G669UVsqgW9p4yVNWayBsiyZW1Rc0Qf2SHc4IKF3%2FwFCzBMD%2B7PrtEIw3lnfWToY8CgennL%2BMJXQMBj%2FftlXPh2uyFI24nl1ng%3D%3D
+
+
+Items in Each Job Lot:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = 100 Item beauty bundle makeup Wholesale mixed joblot cosmetics limited stock new, Rating = 0, Profit = £-60.58, Accuracy Score = 0.0, Buy Price = £49.95, Sell Price = £0.0, Postage Price = £10.63, Web URL = https://www.ebay.co.uk/itm/315783669229?_skw=beauty+job+lot&hash=item49862c65ed:g:wEQAAOSw~JZm8zO~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UarQi1tzzNg9yAVp%2FW4CFL73OTb20d0AlPSh1JmATt9zbWSYvHm8c6noyBxwP5NgTRyVGlr689jO8nm1IrMiTdLw5LFkvgoUykatu1YPXCjAZaw8GwCr6jeJYLrOWhaWm9cVI6BOgp%2FDkTec20TNAVyHoGA%2B%2BzTlld%2Biqlq%2F91U1DAdtRTlaPOISnV1%2F5FMWopKvzqnbtb1G669UVsqgW9p4yVNWayBsiyZW1Rc0Qf2SHc4IKF3%2FwFCzBMD%2B7PrtEIw3lnfWToY8CgennL%2BMJXQMBj%2FftlXPh2uyFI24nl1ng%3D%3D
+    Items in Job Lot:
+    Item Name = NYX Professional Makeup Ombre Lip Duo 1, Quantity = 0.55, Listing Price = £0.0, Sell Price = £-10.63, Postage Price = £10.63, Buyer Protection Fee = £0.0, Accuracy Score = 0.0, Name Certainty = 1%
+
+
+
+Products used to calculate item info:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = 100 Item beauty bundle makeup Wholesale mixed joblot cosmetics limited stock new, Rating = 0, Profit = £-60.58, Accuracy Score = 0.0, Buy Price = £49.95, Sell Price = £0.0, Postage Price = £10.63, Web URL = https://www.ebay.co.uk/itm/315783669229?_skw=beauty+job+lot&hash=item49862c65ed:g:wEQAAOSw~JZm8zO~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UarQi1tzzNg9yAVp%2FW4CFL73OTb20d0AlPSh1JmATt9zbWSYvHm8c6noyBxwP5NgTRyVGlr689jO8nm1IrMiTdLw5LFkvgoUykatu1YPXCjAZaw8GwCr6jeJYLrOWhaWm9cVI6BOgp%2FDkTec20TNAVyHoGA%2B%2BzTlld%2Biqlq%2F91U1DAdtRTlaPOISnV1%2F5FMWopKvzqnbtb1G669UVsqgW9p4yVNWayBsiyZW1Rc0Qf2SHc4IKF3%2FwFCzBMD%2B7PrtEIw3lnfWToY8CgennL%2BMJXQMBj%2FftlXPh2uyFI24nl1ng%3D%3D
+    Items in Job Lot:
+    Item Name = NYX Professional Makeup Ombre Lip Duo 1, Quantity = 0.55, Listing Price = £0.0, Sell Price = £-10.63, Postage Price = £10.63, Buyer Protection Fee = £0.0, Accuracy Score = 0.0, Name Certainty = 1%
+        Products in Item:
+        Buy Price = £8.65, Postage Price = £10.63, Accuracy Score = 0.0, Web URL = https://www.ebay.co.uk/itm/275302003295?_skw=NYX+Professional+Makeup+Ombre+Lip+Duo+1&hash=item401947325f:g:6ZoAAOSwBQVidXeC
+        Buy Price = £8.85, Postage Price = £10.64, Accuracy Score = 0.0, Web URL = https://www.ebay.co.uk/itm/323193374508?_skw=NYX+Professional+Makeup+Ombre+Lip+Duo+1&hash=item4b3fd3872c:g:sjcAAOSwjOxax5bQ
+        Buy Price = £12.4, Postage Price = £10.73, Accuracy Score = 0.0, Web URL = https://www.ebay.co.uk/itm/113453948777?_skw=NYX+Professional+Makeup+Ombre+Lip+Duo+1&hash=item1a6a61df69:g:sHcAAOSwhqhaMCe0
+

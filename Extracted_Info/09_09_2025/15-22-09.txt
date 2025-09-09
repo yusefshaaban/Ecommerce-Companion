@@ -1,0 +1,79 @@
+Job Lots:
+________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = 254 drum & bass/jungle/rave/hardcore job lot of vinyl records, Rating = 0, Profit = £-933.00, Accuracy Score = 17.25, Buy Listing Price = £1000.16, Sell Price = £67.16, Web URL = https://www.ebay.co.uk/itm/376527214811
+
+
+Items in Each Job Lot:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = 254 drum & bass/jungle/rave/hardcore job lot of vinyl records, Rating = 0, Profit = £-933.00, Accuracy Score = 17.25, Buy Listing Price = £1000.16, Sell Price = £67.16, Web URL = https://www.ebay.co.uk/itm/376527214811
+    Items in Job Lot:
+    Item Name = Nightbreed Pack Of Wolves Pendulum and Matrix Remixes 12 inch, Quantity = 1, Listing Price = £16.69, Sell Price = £13.84, Buyer Protection Fee = £1.15, Postage Price = £1.70, Accuracy Score = 24.27, Name Certainty = 78.0%
+    Item Name = Next Generation Records Next Generation Records 12 inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+    Item Name = Raver Baby Raver Baby 12 inch, Quantity = 2, Listing Price = £26.68, Sell Price = £22.32, Buyer Protection Fee = £1.66, Postage Price = £2.70, Accuracy Score = 27.13, Name Certainty = 75.0%
+    Item Name = Nu Energy Nu Energy 12 inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+    Item Name = Relentless Vinyl Relentless Vinyl 12 inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 65.0%
+    Item Name = UK Hardcore UK Hardcore 12 inch, Quantity = 1, Listing Price = £12.82, Sell Price = £8.68, Buyer Protection Fee = £0.76, Postage Price = £3.38, Accuracy Score = 59.5, Name Certainty = 60.0%
+    Item Name = Rezolve Rezolve 12 inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 40.0%
+
+
+
+Products used to calculate item info:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = 254 drum & bass/jungle/rave/hardcore job lot of vinyl records, Rating = 0, Profit = £-933.00, Accuracy Score = 17.25, Buy Listing Price = £1000.16, Sell Price = £67.16, Web URL = https://www.ebay.co.uk/itm/376527214811
+    Items in Job Lot:
+    Item Name = Nightbreed Pack Of Wolves Pendulum and Matrix Remixes 12 inch, Quantity = 1, Listing Price = £16.69, Sell Price = £13.84, Buyer Protection Fee = £1.15, Postage Price = £1.70, Accuracy Score = 24.27, Name Certainty = 78.0%
+        Products in Item:
+        Buy Price = £14.99, Postage Price = £0.00, Accuracy Score = 16, Web URL = https://www.ebay.co.uk/itm/395654032991?_skw=Nightbreed+Pack+Of+Wolves+Pendulum+and+Matrix+Remixes+12+inch&hash=item5c1ed16e5f:g:kA0AAOSwUotm2tpT
+
+    Item Name = Next Generation Records Next Generation Records 12 inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+        Products in Item:
+        Buy Price = £70.00, Postage Price = £3.00, Accuracy Score = 1.6, Web URL = https://www.ebay.co.uk/itm/155716378379?_skw=Next+Generation+Records+Next+Generation+Records+12+inch&hash=item24416b5f0b:g:444AAOSwMSNk19Mu
+        Buy Price = £4.35, Postage Price = £3.39, Accuracy Score = 1.6, Web URL = https://www.ebay.co.uk/itm/315848483081?_skw=Next+Generation+Records+Next+Generation+Records+12+inch&hash=item498a096109:g:684AAOSw1Y5nDSFu
+        Buy Price = £5.42, Postage Price = £3.38, Accuracy Score = 1.4, Web URL = https://www.ebay.co.uk/itm/167713218489?_skw=Next+Generation+Records+Next+Generation+Records+12+inch&hash=item270c7c9fb9:g:M4YAAOSw2i1nXAcr
+        Buy Price = £17.97, Postage Price = £5.20, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/306402581934?_skw=Next+Generation+Records+Next+Generation+Records+12+inch&hash=item4757045dae:g:-7sAAeSww-Zoet6d
+        Buy Price = £12.75, Postage Price = £3.50, Accuracy Score = 0.1, Web URL = https://www.ebay.co.uk/itm/334118731502?_skw=Next+Generation+Records+Next+Generation+Records+12+inch&hash=item4dcb073eee:g:sQ8AAOSwBaphHhiF
+
+    Item Name = Raver Baby Raver Baby 12 inch, Quantity = 2, Listing Price = £26.68, Sell Price = £22.32, Buyer Protection Fee = £1.66, Postage Price = £2.70, Accuracy Score = 27.13, Name Certainty = 75.0%
+        Products in Item:
+        Buy Price = £16.63, Postage Price = £2.70, Accuracy Score = 8.5, Web URL = https://www.ebay.co.uk/itm/175887128747?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item28f3b098ab:g:isoAAOSwl-Fk9P87
+        Buy Price = £60.38, Postage Price = £2.70, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/155348386557?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item242b7c42fd:g:oVMAAOSwkh9jut~M
+        Buy Price = £26.68, Postage Price = £2.70, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/155260282921?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item24263be829:g:TAsAAOSwAadfbGXQ
+        Buy Price = £49.98, Postage Price = £2.70, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/155750549474?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item244374c7e2:g:d9EAAOSwvoxdcTob
+        Buy Price = £23.98, Postage Price = £2.70, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/155524503132?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item2435fb965c:g:E7IAAOSw4phe9H4k
+        Buy Price = £29.17, Postage Price = £2.70, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/175890658070?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item28f3e67316:g:fRUAAOSwJWVk99Xq
+        Buy Price = £49.98, Postage Price = £2.70, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/154833523452?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item240ccc12fc:g:dDUAAOSwL29iASt8
+        Buy Price = £29.18, Postage Price = £2.70, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/155109239614?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item241d3b2b3e:g:e7YAAOSwFdNf20Y0
+        Buy Price = £28.75, Postage Price = £2.87, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/175744688159?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item28eb33201f:g:UKgAAOSwnuBkb-AP
+        Buy Price = £55.18, Postage Price = £2.70, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/155291024076?_skw=Raver+Baby+Raver+Baby+12+inch&hash=item242810facc:g:u1EAAOSwQ1FjjKq0
+
+    Item Name = Nu Energy Nu Energy 12 inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+        Products in Item:
+
+    Item Name = Relentless Vinyl Relentless Vinyl 12 inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 65.0%
+        Products in Item:
+        Buy Price = £5.42, Postage Price = £5.95, Accuracy Score = 2.89, Web URL = https://www.ebay.co.uk/itm/392871789167?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch&hash=item5b78fbc26f:g:b4AAAOSwoPRfDJId
+        Buy Price = £16.13, Postage Price = £4.50, Accuracy Score = 1.6, Web URL = https://www.ebay.co.uk/itm/175367233239?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch&hash=item28d4b39ed7:g:r2kAAOSwbbVi5EWf&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5Ubne7YeJxOXD2vsuuWPD3JYGwDdgNvW482KfDXCHcsJfwthAInJIqBDjjGFutadshMlJ4CoEBadjPNeDzuyCwllWF3u7jhpedsWm3e4p48WEO1jEhDoJqP4JzH46dyXcsOc5t%2BTu%2FLWsQx5Z0Od3MJtUaPXJIvIypHIo5Uk--mPVh2OaQ6xKd8YFBjmYQEYlOOxTFiYs3yB3rRcBn5DqdilrupaGqwhA4X0ys5Jd0lBIxFJxF4W7tDFgokHVWX9xk6%2FlLpogoI4l9IhHjGJEGfi%2FjR%2Bfcv29FE0tPwxVOMUGIFaf16DbghGbC%2B8qq1mP6w%3D
+        Buy Price = £3.42, Postage Price = £5.00, Accuracy Score = 1.6, Web URL = https://www.ebay.co.uk/itm/365840191616?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch&hash=item552dc65080:g:UfAAAeSwC2Votz6C&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5UYrQ1T%2BK7h%2B2do%2Bff61fLVUpu1lIOoQPgt5oZRIEWZcAwy67uPlhC3EeePCSp%2FWqYKuqDg5MHG0cvhxB4lrWSmipbn9Ft0aMdJaCbjwU71KtGjB1osRjbFlJuT5FtqtCK87nM9UgvkVqQeu9pzo0nVpW7Fvxq%2FmX3%2FVNXPriN%2Foze40%2FvSCQLP97Tq2stQEctgC2vUfi%2BW2rgQXQD%2BVgUHR9q2ujh6lLXaMUwMyozRxwOfq5ouquLP%2BB44o0V7XQb2%2BdrUyN3%2BDDadoCbt7lRcw1Vo1KKsd1TxGSyn1h4EW1%2FSg6weUX%2FL4mO1e%2BT%2FiiAI%3D
+        Buy Price = £31.87, Postage Price = £0.00, Accuracy Score = 1.6, Web URL = https://www.ebay.co.uk/itm/186013787798?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch&hash=item2b4f492696:g:cvYAAOSwfXNkxysG
+        Buy Price = £16.13, Postage Price = £3.50, Accuracy Score = 1.55, Web URL = https://www.ebay.co.uk/itm/124347204190?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch&hash=item1cf3abc25e:g:U0EAAOSwvndfaRlv&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5Ub4a1q2jdqEh741Och12ztc0n1cVVNLADLJGhWuHpj1Muxbh%2F2IqNaafdEUuxWcPBEpCtlnzsf1ww74zIZf4EEsld2iK6FxRAYB6R6vyJdQ9vgJFRq4hoIjbYwzR1kNffLvMvifAZNMsjqxtRzRQx%2B8Id9LNuPddyHJ1AHG1t%2Fmrmi6fsXGc7aAI45XGWyui16l8LkQkxUcjeeMovkbmopBZhC4pE5xuEjq4uVmoMAJXTspfkm7vo06lOGOs6aP%2BBq%2FqzO0BHJ0Ysr45CZdhIZjN%2FWdyVdQqvRfCM56QowBxjQBdhStOsnaO3vZxad2PP4%3D
+        Buy Price = £16.13, Postage Price = £4.00, Accuracy Score = 1.36, Web URL = https://www.ebay.co.uk/itm/224508496894?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch&hash=item3445bfcbfe:g:wEAAAOSw0ZZg06gX
+        Buy Price = £15.99, Postage Price = £0.00, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/356124363220?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch&hash=item52eaaa89d4:g:cYAAAOSwTztnA8Om
+        Buy Price = £770.91, Postage Price = £7.00, Accuracy Score = 0.97, Web URL = https://www.ebay.co.uk/itm/123922843650?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch&hash=item1cda608802:g:lLYAAOSwl6RdkOIJ
+        Buy Price = £6.50, Postage Price = £5.40, Accuracy Score = 0, Web URL = https://www.ebay.co.uk/itm/175527428611?_skw=Relentless+Vinyl+Relentless+Vinyl+12+inch&hash=item28de400203:g:-fIAAOSwAmRjlJX6&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5UYbuUPQlLKh1pUHCktRZbKP%2BKGuFmM8jkZoKib6B8hbtT7swnsTpjUOWN32VMy0lxgmjfKFGK9hjpoXV1bMvdzOjjApUgAAmBJIV0qZOQNcJDYs%2BW0CMjNdqiGtZpm0jTB20firFaHxp7TNpg7aEZ%2FPJP3NqPsLbfWITTKNkeV0uiofQ16q%2FhYPInxgRTNgtXIicEwM%2BYWGYuhSUDlt2e83jfSs1bHFnJCG1VE9UUowVHAOam7TkqS4XaDjL9%2F0Uu5GxYBi3TWiCz3kkWG65p9Sh2TNqsyqAj9TAuNR7s9551%2BVYzktC7zCPnw8sq5j9b4%3D
+
+    Item Name = UK Hardcore UK Hardcore 12 inch, Quantity = 1, Listing Price = £12.82, Sell Price = £8.68, Buyer Protection Fee = £0.76, Postage Price = £3.38, Accuracy Score = 59.5, Name Certainty = 60.0%
+        Products in Item:
+        Buy Price = £21.61, Postage Price = £3.38, Accuracy Score = 36.71, Web URL = https://www.ebay.co.uk/itm/325724038354?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item4bd6aa64d2:g:5IMAAOSwSRRkppUE
+        Buy Price = £10.78, Postage Price = £3.38, Accuracy Score = 36.71, Web URL = https://www.ebay.co.uk/itm/157268910868?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item249df52314:g:71EAAeSwpcpoi58n
+        Buy Price = £26.62, Postage Price = £3.38, Accuracy Score = 36.41, Web URL = https://www.ebay.co.uk/itm/406099271109?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item5e8d671dc5:g:WOwAAeSwH1ZojjhE
+        Buy Price = £21.21, Postage Price = £3.38, Accuracy Score = 36.41, Web URL = https://www.ebay.co.uk/itm/405049997193?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item5e4edc7789:g:WhIAAOSwxq5mdEax
+        Buy Price = £22.25, Postage Price = £3.38, Accuracy Score = 36.41, Web URL = https://www.ebay.co.uk/itm/405255420015?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item5e5b1af86f:g:GJMAAOSwP4hms3Bf
+        Buy Price = £9.44, Postage Price = £5.00, Accuracy Score = 35.29, Web URL = https://www.ebay.co.uk/itm/136345210248?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item1fbececd88:g:2UQAAeSwZz9ophju
+        Buy Price = £19.99, Postage Price = £3.50, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/166164816741?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item26b031e365:g:jfcAAOSwChVkhafQ&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5UZ1%2BeRUMuyCS0vnkr9l%2Bhstr6n4QxvvQdJ3uqTO6J66W%2BxRmyuvxTXotcvnYGxLlLQ2Ded8dEeObWiwA59ZIjHPGqJVJ8Hk3pMO8oUnNSy4rKUl7K0stCMc0crHQkrAEggUx7YbKCR5kkoFtLQy30ga%2BSEg%2FvnUOweXPnueInOywSDwbZQy3OXUKI8%2Bj%2BN1n8Oo4C4Y1oH3ce0UgpNb13c4hM%2B60zPdAECbtsx%2B8GLEnFY7PyPUpMVg5%2BWhgKyR1S8bgifYeF%2B5HJNw7vU8pV%2F1NACK4QNr6YuPjh8We%2BVNHj9lJrkmWZL6ctkWe%2Fdo2UM%3D
+        Buy Price = £28.49, Postage Price = £3.38, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/175890658070?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item28f3e67316:g:fRUAAOSwJWVk99Xq&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5Ub4Jrt6dFgV9w%2BxZjNiRNP6NvRkO%2F2wCF%2Fm0HuN7zJLtij%2Fo82ltNeDv%2BF6Q30QiQgTHnj81EHiPuEmFAv64toziDhlnQ9wIhokbXtTy91UMLSnHkhS8BJoWdv6kZRZqI8csOXTdf9HjrH8R3FNS9NJZS80joOvxJDcGQjvIQXB3KrV%2FNXm45cHHSRMeHCkRbYCEhFQ429nVCxPz9qOjPgXD3wOAjRmxQJH7rmdA5aX8Hwo%2FmWDOJ%2Bhz9AxCLLBweqLm8GkSD0mi8%2Fx8nwPS5HjRDi%2Fl3UH5qQNB0w5gF3HHOXovgUTPj6dPeLElw6ar2I%3D
+        Buy Price = £12.99, Postage Price = £4.75, Accuracy Score = 0.46, Web URL = https://www.ebay.co.uk/itm/374299101436?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item5725f708fc:g:JDMAAOSwxkJjRESn
+        Buy Price = £39.99, Postage Price = £6.00, Accuracy Score = 0, Web URL = https://www.ebay.co.uk/itm/236285556504?_skw=UK+Hardcore+UK+Hardcore+12+inch&hash=item3703b77718:g:sagAAOSwhbBoWUXk
+
+    Item Name = Rezolve Rezolve 12 inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 40.0%
+        Products in Item:
+

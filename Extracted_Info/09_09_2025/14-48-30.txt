@@ -1,0 +1,57 @@
+Job Lots:
+________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = 254 drum & bass/jungle/rave/hardcore job lot of vinyl records, Rating = 0, Profit = £-982.37, Accuracy Score = 14.96, Buy Listing Price = £1000.16, Sell Price = £17.79, Web URL = https://www.ebay.co.uk/itm/376527214811
+
+
+Items in Each Job Lot:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = 254 drum & bass/jungle/rave/hardcore job lot of vinyl records, Rating = 0, Profit = £-982.37, Accuracy Score = 14.96, Buy Listing Price = £1000.16, Sell Price = £17.79, Web URL = https://www.ebay.co.uk/itm/376527214811
+    Items in Job Lot:
+    Item Name = Nightbreed Pack of Wolves Pendulum and Matrix Remixes 12-inch, Quantity = 1, Listing Price = £16.69, Sell Price = £13.84, Buyer Protection Fee = £1.15, Postage Price = £1.70, Accuracy Score = 24.27, Name Certainty = 85.0%
+    Item Name = Next Generation Records Vinyl Single 12-inch, Quantity = 1, Listing Price = £7.74, Sell Price = £3.95, Buyer Protection Fee = £0.40, Postage Price = £3.39, Accuracy Score = 50.51, Name Certainty = 60.0%
+    Item Name = Nu Energy Vinyl Single 12-inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+    Item Name = Relentless Vinyl Vinyl Single 12-inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+    Item Name = UK Hardcore Various Artists Compilation 12-inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 65.0%
+
+
+
+Products used to calculate item info:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = 254 drum & bass/jungle/rave/hardcore job lot of vinyl records, Rating = 0, Profit = £-982.37, Accuracy Score = 14.96, Buy Listing Price = £1000.16, Sell Price = £17.79, Web URL = https://www.ebay.co.uk/itm/376527214811
+    Items in Job Lot:
+    Item Name = Nightbreed Pack of Wolves Pendulum and Matrix Remixes 12-inch, Quantity = 1, Listing Price = £16.69, Sell Price = £13.84, Buyer Protection Fee = £1.15, Postage Price = £1.70, Accuracy Score = 24.27, Name Certainty = 85.0%
+        Products in Item:
+        Buy Price = £14.99, Postage Price = £0.00, Accuracy Score = 16, Web URL = https://www.ebay.co.uk/itm/395654032991?_skw=Nightbreed+Pack+of+Wolves+Pendulum+and+Matrix+Remixes+12-inch&hash=item5c1ed16e5f:g:kA0AAOSwUotm2tpT
+
+    Item Name = Next Generation Records Vinyl Single 12-inch, Quantity = 1, Listing Price = £7.74, Sell Price = £3.95, Buyer Protection Fee = £0.40, Postage Price = £3.39, Accuracy Score = 50.51, Name Certainty = 60.0%
+        Products in Item:
+        Buy Price = £4.35, Postage Price = £3.39, Accuracy Score = 55.5, Web URL = https://www.ebay.co.uk/itm/315848483081?_skw=Next+Generation+Records+Vinyl+Single+12-inch&hash=item498a096109:g:684AAOSw1Y5nDSFu
+        Buy Price = £17.97, Postage Price = £5.20, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/306402581934?_skw=Next+Generation+Records+Vinyl+Single+12-inch&hash=item4757045dae:g:-7sAAeSww-Zoet6d
+        Buy Price = £12.75, Postage Price = £3.50, Accuracy Score = 0.87, Web URL = https://www.ebay.co.uk/itm/334118731502?_skw=Next+Generation+Records+Vinyl+Single+12-inch&hash=item4dcb073eee:g:sQ8AAOSwBaphHhiF
+
+    Item Name = Nu Energy Vinyl Single 12-inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+        Products in Item:
+
+    Item Name = Relentless Vinyl Vinyl Single 12-inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+        Products in Item:
+        Buy Price = £16.13, Postage Price = £3.50, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/124347204190?_skw=Relentless+Vinyl+Vinyl+Single+12-inch&hash=item1cf3abc25e:g:U0EAAOSwvndfaRlv&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5Ub4a1q2jdqEh741Och12ztc0n1cVVNLADLJGhWuHpj1Muxbh%2F2IqNaafdEUuxWcPBEpCtlnzsf1ww74zIZf4EEsld2iK6FxRAYB6R6vyJdQ9vgJFRq4hoIjbYwzR1kNffL1ygVo9f80Rs4rKwK5rUq%2BOsBfdL3q%2Fj2%2F0%2FH0MFrUrWIRyTAfDgJWnw2EhR66KiD%2FwnFoe4L1yeuV3meYKFFOG3YDHb7ataLxeBj3A%2FQ%2BI89XYoiOExwGED47NbrrxHoZOrjZtFAiqfEOqDGY9SeRKigaSOVrM8Di5gy3FRzpSDOkF0rQDYQwv4c%2FMoiwvGw%3D
+        Buy Price = £31.87, Postage Price = £0.00, Accuracy Score = 1, Web URL = https://www.ebay.co.uk/itm/186013787798?_skw=Relentless+Vinyl+Vinyl+Single+12-inch&hash=item2b4f492696:g:cvYAAOSwfXNkxysG
+        Buy Price = £16.13, Postage Price = £4.00, Accuracy Score = 0.97, Web URL = https://www.ebay.co.uk/itm/224508496894?_skw=Relentless+Vinyl+Vinyl+Single+12-inch&hash=item3445bfcbfe:g:wEAAAOSw0ZZg06gX&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5UYXW1Y70ddAlzwYmyfs1RUizQ1Cj1v%2FJ4bxOML%2BId9imEX2n17o%2BUaRIebbGPeUb4C64EzElBtx9sSafJ53GFGQ69pHAynPuCQ%2BzKXyNA9YE5EYWnF9RSmefeECx%2Fk%2FrA8eywg0KlllWMEmabGZpgj%2B8ja7K%2FzXpBC0NvR2r3kxKsKzb%2F6fb8OnjPKYm7nsCtIvlmjKwBabYupLHyMdYOhX%2FzCZQTEal4QNrpN%2FhuQGQ58trdUDOWfqRHbvWG3SZEAZ1KvgoJDVcuiN%2B4cT%2FN3xSQbFP4iwIWFB3gr%2Bw%2BrRKRZBe9GOEve%2F0LoJlsHYbzU%3D
+        Buy Price = £25.03, Postage Price = £0.00, Accuracy Score = 0.57, Web URL = https://www.ebay.co.uk/itm/286767423779?_skw=Relentless+Vinyl+Vinyl+Single+12-inch&hash=item42c4aba123:g:CLAAAeSw5Nlon2jm
+        Buy Price = £3.54, Postage Price = £5.70, Accuracy Score = 0.54, Web URL = https://www.ebay.co.uk/itm/357310593355?_skw=Relentless+Vinyl+Vinyl+Single+12-inch&hash=item53315ef94b:g:PRMAAeSwx6poeuBY
+        Buy Price = £2.63, Postage Price = £4.90, Accuracy Score = 0.54, Web URL = https://www.ebay.co.uk/itm/376443773151?_skw=Relentless+Vinyl+Vinyl+Single+12-inch&hash=item57a5cc20df:g:rswAAeSw1rhoiihA
+        Buy Price = £1.63, Postage Price = £5.90, Accuracy Score = 0.54, Web URL = https://www.ebay.co.uk/itm/376375306314?_skw=Relentless+Vinyl+Vinyl+Single+12-inch&hash=item57a1b7684a:g:3vsAAeSwlK5oYvhl
+        Buy Price = £6.50, Postage Price = £5.40, Accuracy Score = 0, Web URL = https://www.ebay.co.uk/itm/175527428611?_skw=Relentless+Vinyl+Vinyl+Single+12-inch&hash=item28de400203:g:-fIAAOSwAmRjlJX6&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5UYbuUPQlLKh1pUHCktRZbKP%2BKGuFmM8jkZoKib6B8hbtT7swnsTpjUOWN32VMy0lxgmjfKFGK9hjpoXV1bMvdzOjjApUgAAmBJIV0qZOQNcJDYs%2BW0CMjNdqiGtZpm0jTB%2BZYu5F9ftscCTM8e7oJnAXeBieVZ3d8m%2BGeHQEmlsEu0%2FQDSi0%2B9n9KTSYNOt%2FWrDCpYJ4sfs8EWG32kxw8ycpbqfOhOCertsKQa0rQPb2fA2b8WiXWKSLzI8PCCscJTxDVIO7Jbwgsx7rGqZ%2BDZ4ElMQ5n41ueqv7VDNn0gW%2BlPeLAd1hiEUS1TLeS%2FDl6s%3D
+
+    Item Name = UK Hardcore Various Artists Compilation 12-inch, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 65.0%
+        Products in Item:
+        Buy Price = £42.27, Postage Price = £2.94, Accuracy Score = 0.93, Web URL = https://www.ebay.co.uk/itm/406185922115?_skw=UK+Hardcore+Various+Artists+Compilation+12-inch&hash=item5e92914e43:g:Rp0AAeSwm29ouR5j
+        Buy Price = £22.40, Postage Price = £0.00, Accuracy Score = 0.33, Web URL = https://www.ebay.co.uk/itm/197658256618?_skw=UK+Hardcore+Various+Artists+Compilation+12-inch&hash=item2e0559a4ea:g:vVQAAeSwCoJosvC7
+        Buy Price = £16.69, Postage Price = £2.94, Accuracy Score = 0.33, Web URL = https://www.ebay.co.uk/itm/405661100466?_skw=UK+Hardcore+Various+Artists+Compilation+12-inch&hash=item5e734929b2:g:580AAeSwq3Zn1fLu&amdata=enc%3AAQAKAAABEPeG5RIuIyokJHJy903%2F5Ub1aY4mgBiKjSzOsUfgLgIoogWNQJLCM%2FX%2B69hJ1ctelJDUg7iyX9yo0GvaaSYfXOTJpmj%2BT7V1sA1B68%2B7h8TpqScGtl6Ir%2B8JPq83sVmoEmh8blkoTVQsdaKJGt4oX5q4EExzRcGyi71oQaR8kayhUG1T9U5j4hWrmKXphM1Ezmbc%2B0Dojvcy8pNnbX6DcdHXzP9j%2BG5gYuvE5BEdTVa3hNn11x6UC5fM8GwMjFhRJLvswKNBFt5FHDLVfNBeMznxe3xwkgqd0c80EVunM8hs7kfzyVi7iygIm5LY6cv9IXVYkQwlSq%2BmJ62JycJuMxDSdf2mwgiyo9cICOY1W7hM
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.32, Web URL = https://www.ebay.co.uk/itm/196945285771?_skw=UK+Hardcore+Various+Artists+Compilation+12-inch&hash=item2ddada928b:g:xWkAAOSwGR1ng-g1
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.32, Web URL = https://www.ebay.co.uk/itm/196945264057?_skw=UK+Hardcore+Various+Artists+Compilation+12-inch&hash=item2ddada3db9:g:tygAAOSwpgJng-RW
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.32, Web URL = https://www.ebay.co.uk/itm/196945257264?_skw=UK+Hardcore+Various+Artists+Compilation+12-inch&hash=item2ddada2330:g:rogAAOSwyxBng-NW
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.32, Web URL = https://www.ebay.co.uk/itm/196945244788?_skw=UK+Hardcore+Various+Artists+Compilation+12-inch&hash=item2ddad9f274:g:~3sAAOSw-tJng-Bg
+        Buy Price = £20.29, Postage Price = £0.00, Accuracy Score = 0.32, Web URL = https://www.ebay.co.uk/itm/196945268383?_skw=UK+Hardcore+Various+Artists+Compilation+12-inch&hash=item2ddada4e9f:g:Y0kAAOSw44xng-Ut
+        Buy Price = £20.97, Postage Price = £5.20, Accuracy Score = 0.03, Web URL = https://www.ebay.co.uk/itm/376240277032?_skw=UK+Hardcore+Various+Artists+Compilation+12-inch&hash=item5799ab0628:g:1doAAeSwZSBoISIt
+

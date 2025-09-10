@@ -56,6 +56,7 @@ def self_update(repo_dir: str | Path = "."):
 
     update_ok = False
     try:
+        protected = [".env"]
         sh(["git", "fetch", "--prune"], cwd=repo)
         try:
             sh(["git", "merge", "--ff-only", "@{u}"], cwd=repo)
@@ -63,6 +64,7 @@ def self_update(repo_dir: str | Path = "."):
         except subprocess.CalledProcessError:
             sh(["git", "rebase", "@{u}"], cwd=repo)
             update_ok = True
+            sh(["git", "stash", "pop", protected], cwd=repo) if had_stash else None
     finally:
         if had_stash and update_ok:
             # Reapply only if we actually updated cleanly

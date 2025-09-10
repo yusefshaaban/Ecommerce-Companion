@@ -1,54 +1,108 @@
 import subprocess
-import sys
 from pathlib import Path
 
 def sh(args, cwd="."):
     return subprocess.run(args, cwd=cwd, check=True, capture_output=True, text=True)
 
-def self_update(repo_dir: str | Path = "."):
-    repo = Path(repo_dir).resolve()
-
-    # Verify git available and in a repo
-    sh(["git", "rev-parse", "--is-inside-work-tree"], cwd=repo)
-
-    # Determine current branch (fallback to main)
+def in_progress(repo: Path) -> bool:
+    # Detect ongoing rebase/merge/cherry-pick
     try:
-        branch = sh(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=repo).stdout.strip()
+        out = sh(["git", "status", "--porcelain", "--branch"], cwd=repo).stdout
     except subprocess.CalledProcessError:
-        branch = "main"
+        return True
+    markers = ( "rebase in progress", "rebase-i", "rebase-m", "merge in progress",
+                "cherry-pick in progress", "bisect in progress" )
+    return any(m in out.lower() for m in markers)
 
-    # Make sure an upstream exists; set it if missing
+def current_branch(repo: Path) -> str | None:
+    # None if detached
+    out = sh(["git", "symbolic-ref", "--short", "-q", "HEAD"], cwd=repo).stdout.strip()
+    return out or None
+
+def has_upstream(repo: Path) -> bool:
     try:
         sh(["git", "rev-parse", "--abbrev-ref", "--symbolic-full-name", "@{u}"], cwd=repo)
+        return True
     except subprocess.CalledProcessError:
-        # Assumes origin/<branch> exists
-        sh(["git", "branch", "--set-upstream-to", f"origin/{branch}", branch], cwd=repo)
+        return False
 
-    # Stash local changes (including untracked), pull with rebase, then pop stash (if any)
+def remote_has_branch(repo: Path, remote: str, branch: str) -> bool:
+    try:
+        out = sh(["git", "ls-remote", "--heads", remote, branch], cwd=repo).stdout.strip()
+        return bool(out)
+    except subprocess.CalledProcessError:
+        return False
+
+def self_update(repo_dir: str | Path = "."):
+    repo = Path(repo_dir).resolve()
+    sh(["git", "rev-parse", "--is-inside-work-tree"], cwd=repo)
+
+    if in_progress(repo):
+        raise RuntimeError("Repository has an operation in progress (merge/rebase/etc.). Resolve it first.")
+
+    branch = current_branch(repo) or "main"
+
+    # Ensure upstream
+    if not has_upstream(repo):
+        if remote_has_branch(repo, "origin", branch):
+            sh(["git", "branch", "--set-upstream-to", f"origin/{branch}", branch], cwd=repo)
+        # else: leave unset; first push will set it.
+
+    # Stash if dirty
     had_stash = False
-    status = sh(["git", "status", "--porcelain"], cwd=repo).stdout
-    if status.strip():
+    if sh(["git", "status", "--porcelain"], cwd=repo).stdout.strip():
         had_stash = True
-        sh(["git", "stash", "push", "--include-untracked", "-m", "autostash-before-start"], cwd=repo)
+        sh(["git", "stash", "push", "--include-untracked", "-m", "autostash-before-update"], cwd=repo)
 
+    update_ok = False
     try:
         sh(["git", "fetch", "--prune"], cwd=repo)
-        # Prefer fast-forward; if not possible, rebase
         try:
             sh(["git", "merge", "--ff-only", "@{u}"], cwd=repo)
+            update_ok = True
         except subprocess.CalledProcessError:
             sh(["git", "rebase", "@{u}"], cwd=repo)
+            update_ok = True
     finally:
-        if had_stash:
-            # Try to reapply stashed work; if conflicts, keep working tree as-is
+        if had_stash and update_ok:
+            # Reapply only if we actually updated cleanly
             subprocess.run(["git", "stash", "pop"], cwd=repo)
 
-if __name__ == "__main__":
+def self_push_all(repo_target: str | Path = "."):
+    target_path = Path(repo_target).resolve()
+    repo_dir = target_path.parent if target_path.is_file() else target_path
+
+    sh(["git", "rev-parse", "--is-inside-work-tree"], cwd=repo_dir)
+    repo_root = Path(sh(["git", "rev-parse", "--show-toplevel"], cwd=repo_dir).stdout.strip())
+
+    to_add = str(target_path.relative_to(repo_root)) if target_path.is_file() else "."
+    sh(["git", "add", to_add], cwd=repo_root)
+
+    committed = False
     try:
-        self_update(".")
-    except FileNotFoundError:
-        print("Git not found on PATH. Please contact Anas.")
+        sh(["git", "commit", "-m", "Auto-commit job lots"], cwd=repo_root)
+        committed = True
     except subprocess.CalledProcessError as e:
-        print("Self-update failed:", e.stderr or e)
-    # start your app after updating
-    # main()
+        if "nothing to commit" in (e.stdout + e.stderr).lower():
+            print("No changes to commit.")
+        else:
+            raise
+
+    if committed:
+        # Ensure there is an upstream; if not, set it on first push
+        branch = current_branch(repo_root) or "main"
+        if has_upstream(repo_root):
+            try:
+                sh(["git", "push"], cwd=repo_root)
+                print("Pushed successfully.")
+            except subprocess.CalledProcessError as e:
+                print("Push failed:", e.stderr or e.stdout)
+        else:
+            try:
+                sh(["git", "push", "-u", "origin", branch], cwd=repo_root)
+                print("Pushed successfully (set upstream).")
+            except subprocess.CalledProcessError as e:
+                print("Push failed:", e.stderr or e.stdout)
+
+if __name__ == "__main__":
+    self_push_all("Operations/all_job_lots.pkl")

@@ -78,9 +78,10 @@ def self_push_all(repo_target: str | Path = "."):
     to_add = str(target_path.relative_to(repo_root)) if target_path.is_file() else "."
     sh(["git", "add", to_add], cwd=repo_root)
 
+# test
     committed = False
     try:
-        sh(["git", "commit", "-m", "Auto-commit job lots"], cwd=repo_root)
+        sh(["git", "commit", "-m", '\"Auto-commit job lots\"'], cwd=repo_root)
         committed = True
     except subprocess.CalledProcessError as e:
         if "nothing to commit" in (e.stdout + e.stderr).lower():
@@ -105,4 +106,4 @@ def self_push_all(repo_target: str | Path = "."):
                 print("Push failed:", e.stderr or e.stdout)
 
 if __name__ == "__main__":
-    self_push_all("Operations/all_job_lots.pkl")
+    self_push_all("GitHandler.py")

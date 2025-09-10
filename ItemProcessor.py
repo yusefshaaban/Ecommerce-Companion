@@ -302,8 +302,15 @@ if __name__ == "__main__":
     # Example usage: run this module directly to process a sample item
     # and print out the scored candidate products.
     item_processor = ItemProcessor()
-    item = Item("Molton Brown Bath and Shower Gel 30 ml", brand_name="Molton Brown", variant_name="Bath and Shower Gel 30 ml", original_brand_name="", original_variant_name="test", quantity=1, measurements=[30.0, 'ml'])
-    item_processor.process(item)
+    item = Item(name="The Body Shop British Rose Body Butter 50ml", brand_name="The Body Shop", variant_name="British Rose Body Butter 50ml", original_brand_name="The Body Shop", original_variant_name="British Rose Body Butter 50ml", quantity=1, measurements=[[50,'ml']])
+    params = {
+        "filter": f"filter=",
+        "buyingOptions": f"buyingOptions:{{FIXED_PRICE}}",
+        "conditions": f"conditions:{{NEW}}",
+        "deliveryCountry": f"deliveryCountry:GB",
+        "itemLocationCountry": f"itemLocationCountry:GB"
+    }
+    item_processor.process(item, params)
     n = 0
     for product in item.products:
         print(f"{n}. Product: {product.name}, Listing Price: {product.listing_price}, Buy Price: {product.buy_price}, Postage Price: {product.postage_price}, Accuracy Score: {product.accuracy_score}, web_url: {product.web_url}\n")

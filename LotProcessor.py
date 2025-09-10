@@ -51,6 +51,7 @@ All monetary values are assumed to be in the same currency.
 """
 
 from BeautyItemProcessor import BeautyItemProcessor
+from datetime import datetime
 
 
 class LotProcessor:
@@ -132,25 +133,23 @@ class LotProcessor:
             total_score += item.price_quality * item.quantity
             num_items += item.quantity
         
-        total_listing_price = total_sell_price + total_postage_price + total_other_fees
+        jobLot.sell_price = round(total_sell_price, 2)
+        jobLot.postage_price = round(total_postage_price, 2)
+        jobLot.listing_price = round(total_sell_price + total_postage_price + total_other_fees, 2)
 
         # Slightly normalize the total score to avoid over-favoring smaller lots.
         if num_items > 0:
             total_score *= (num_items ** .1)
 
         # Profit calculation; if buy_listing_price is unknown, profit defaults to 0.
-        profit = total_sell_price - (jobLot.buy_listing_price) if jobLot.buy_listing_price is not None else 0
+        jobLot.profit = round(total_sell_price - (jobLot.buy_listing_price) if jobLot.buy_listing_price is not None else 0, 2)
 
         # Rating rewards profitable lots; otherwise 0.
-        rating = round((total_score) * (profit ** 1.2), 2) if profit > 0 else 0
+        jobLot.rating = round((total_score) * (jobLot.profit ** 1.2), 2) if jobLot.profit > 0 else 0
 
         # Average (quantity-weighted) accuracy across the lot.
-        lot_accuracy_score = total_accuracy_score / num_items if num_items > 0 else 0
+        jobLot.accuracy_score = round(total_accuracy_score / num_items, 2) if num_items > 0 else 0
 
-        # Persist computed fields back onto the lot (rounded for display/storage).
-        jobLot.sell_price = round(total_sell_price, 2)
-        jobLot.postage_price = round(total_postage_price, 2)
-        jobLot.listing_price = round(total_listing_price, 2)
-        jobLot.profit = round(profit, 2)
-        jobLot.accuracy_score = round(lot_accuracy_score, 2)
-        jobLot.rating = round(rating, 2)
+        current_date = datetime.now().strftime("%d_%m_%Y")
+
+        jobLot.date_created = current_date

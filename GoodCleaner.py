@@ -151,8 +151,6 @@ class GoodCleaner:
         10) Collapse repeated whitespace and trim ends.
         11) Persist results back to the `good` object as described above.
         """
-        # Preserve the original concatenated name before any cleaning.
-        good.original_name = f"{good.brand_name} {good.variant_name}".strip()
 
         # Begin cleaning on the variant text only.
         name = good.variant_name.strip()
@@ -160,11 +158,16 @@ class GoodCleaner:
         # Replace hyphens and underscores with spaces to standardise separators.
         name = re.sub(r'[-_]', ' ', name)
 
-        # Remove most special characters (keep letters, digits, dot, equals, hyphen, ampersand, spaces).
-        name = re.sub(r'[^a-zA-Z0-9.=\-&\s]', ' ', name).strip()
-
         # Remove broad set of marketing/listing terms and phrases.
         name = re.sub(self.removal_terms, '', name, flags=re.IGNORECASE)
+
+        # Preserve the original concatenated name before any further cleaning.
+        good.original_name = f"{good.brand_name} {good.variant_name}".strip()
+        good.original_variant_name = good.variant_name.strip()  # note: this is pre-cleaned variant
+        good.original_brand_name = good.brand_name.strip()  # note: this is pre-cleaned brand
+
+        # Remove most special characters (keep letters, digits, dot, equals, hyphen, ampersand, spaces).
+        name = re.sub(r'[^a-zA-Z0-9.=\-&\s]', ' ', name).strip()
 
         # Remove leading/trailing dots and replace non-decimal dots with spaces.
         name = re.sub(r'^\.+|\.+$', '', name)
@@ -187,14 +190,17 @@ class GoodCleaner:
         # Remove trailing ".0" sequences, e.g., "10.00" -> "10".
         name = re.sub(r'\.0{1,}', '', name)
 
-        # Join numbers with following unit tokens and lowercase the unit.
-        # Example: "50 ML" -> "50ml"; "100 Kg" -> "100kg"
-        name = re.sub(
-            r'\s+(\b(?:{})\b)'.format('|'.join(self.unit_convertor.get_units())),
-            lambda m: m.group(1).lower() if m.group(1) else '',
-            name,
-            flags=re.IGNORECASE
-        )
+        units = list(self.unit_convertor.get_units())
+        units_pattern = "|".join(re.escape(u) for u in units)
+
+        # Use lookarounds instead of \b so symbols still work.
+        # Requires whitespace before the unit; doesn’t consume preceding number.
+        pattern = rf"\s+(?=({units_pattern})(?!\w))"
+
+        unit_re = re.compile(pattern, flags=re.IGNORECASE)
+
+        # Replace the whitespace + unit with the lowercased unit + a space
+        name = unit_re.sub(lambda m: m.group(1).lower() + " ", name)
 
         # Remove "RRP 12.99" style price hints.
         name = re.sub(r'rrp\s*(\d+(?:\.\d+)?)', ' ', name, flags=re.IGNORECASE)
@@ -205,10 +211,11 @@ class GoodCleaner:
         # Collapse extra whitespace and trim.
         name = re.sub(r'\s+', ' ', name).strip()
 
+        # Remove broad set of marketing/listing terms and phrases.
+        name = re.sub(self.removal_terms, '', name, flags=re.IGNORECASE)
+
         # Persist cleaned fields back to the product-like object.
         good.variant_name = name
-        good.original_brand_name = good.brand_name
-        good.original_variant_name = good.variant_name  # note: this is the *cleaned* variant
         good.name = f"{good.brand_name} {good.variant_name}".strip()
 
 

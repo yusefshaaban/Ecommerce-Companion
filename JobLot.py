@@ -21,7 +21,7 @@ class JobLot:
     profit: float = 0
     accuracy_score: float = 0
     rating: float = 0
-    
+    date_created: str = None
 
     def get_item_info(self):
         for item in self.get_items():

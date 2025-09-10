@@ -1,0 +1,130 @@
+Job Lots:
+________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = Beauty Bundle Job Lot Skin Care 8 items plus 2 bonus free items free p & p, Rating = 4860.21, Profit = £52.52, Accuracy Score = 28.59, Buy Listing Price = £9.98, Sell Price = £62.50, Web URL = https://www.ebay.co.uk/itm/116772596219?_skw=beauty+job+lot&hash=item1b303069fb:g:fCEAAeSwVRVowECL
+
+
+Items in Each Job Lot:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = Beauty Bundle Job Lot Skin Care 8 items plus 2 bonus free items free p & p, Rating = 4860.21, Profit = £52.52, Accuracy Score = 28.59, Buy Listing Price = £9.98, Sell Price = £62.50, Web URL = https://www.ebay.co.uk/itm/116772596219?_skw=beauty+job+lot&hash=item1b303069fb:g:fCEAAeSwVRVowECL
+    Items in Job Lot:
+    Item Name = Sukin Hydration Rehydrating Gel Cream 60 ml, Quantity = 1, Listing Price = £20.70, Sell Price = £16.64, Buyer Protection Fee = £1.36, Postage Price = £2.70, Accuracy Score = 65.61, Name Certainty = 85.0%
+    Item Name = Freeman Energize Jelly Mask 89 ml, Quantity = 1, Listing Price = £5.10, Sell Price = £2.13, Buyer Protection Fee = £0.27, Postage Price = £2.70, Accuracy Score = 65.68, Name Certainty = 95.0%
+    Item Name = AH-8 Firming Lifting Neck Cream 4.25 fl oz, Quantity = 1, Listing Price = £6.46, Sell Price = £4.33, Buyer Protection Fee = £0.43, Postage Price = £1.70, Accuracy Score = 24.28, Name Certainty = 70.0%
+    Item Name = Yes To Cucumbers Soothing Cooling Jelly Mask 100 ml, Quantity = 1, Listing Price = £6.23, Sell Price = £2.54, Buyer Protection Fee = £0.30, Postage Price = £3.39, Accuracy Score = 25.61, Name Certainty = 60.0%
+    Item Name = Kate Somerville DermalQuench Liquid Lift 50 ml, Quantity = 1, Listing Price = £7.79, Sell Price = £4.41, Buyer Protection Fee = £0.44, Postage Price = £2.94, Accuracy Score = 30.82, Name Certainty = 60.0%
+    Item Name = MUSE Energising Face Serum 30 ml, Quantity = 1, Listing Price = £8.73, Sell Price = £6.58, Buyer Protection Fee = £0.60, Postage Price = £1.55, Accuracy Score = 23.66, Name Certainty = 65.0%
+    Item Name = by Amazon Almond & Orange Shower Cream 500 ml, Quantity = 1, Listing Price = £4.75, Sell Price = £1.81, Buyer Protection Fee = £0.24, Postage Price = £2.70, Accuracy Score = 27.52, Name Certainty = 75.0%
+    Item Name = Beauty Kitchen Inspire Me Instant Hydration Body Oil 100 ml, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+    Item Name = Beauty Kitchen Inspire Me Body Oil Firming & Toning 100 ml, Quantity = 1, Listing Price = £11.41, Sell Price = £7.84, Buyer Protection Fee = £0.70, Postage Price = £2.87, Accuracy Score = 23.08, Name Certainty = 70.0%
+    Item Name = Beauty Kitchen Abyssinian Oil Handbag Beauty Balm 60 ml, Quantity = 1, Listing Price = £12.21, Sell Price = £8.75, Buyer Protection Fee = £0.77, Postage Price = £2.69, Accuracy Score = 24.81, Name Certainty = 55.00000000000001%
+    Item Name = Bio-Ene Age-Defy Under Eye Patches 12 pairs, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 60.0%
+    Item Name = No7 Radiance Vitamin C Serum 30 ml, Quantity = 1, Listing Price = £11.08, Sell Price = £7.47, Buyer Protection Fee = £0.67, Postage Price = £2.94, Accuracy Score = 31.98, Name Certainty = 50.0%
+
+
+
+Products used to calculate item info:
+_________________________________________________________________________________________________________________________________________________________________
+1. Lot Name = Beauty Bundle Job Lot Skin Care 8 items plus 2 bonus free items free p & p, Rating = 4860.21, Profit = £52.52, Accuracy Score = 28.59, Buy Listing Price = £9.98, Sell Price = £62.50, Web URL = https://www.ebay.co.uk/itm/116772596219?_skw=beauty+job+lot&hash=item1b303069fb:g:fCEAAeSwVRVowECL
+    Items in Job Lot:
+    Item Name = Sukin Hydration Rehydrating Gel Cream 60 ml, Quantity = 1, Listing Price = £20.70, Sell Price = £16.64, Buyer Protection Fee = £1.36, Postage Price = £2.70, Accuracy Score = 65.61, Name Certainty = 85.0%
+        Products in Item:
+        Buy Price = £18.00, Postage Price = £0.00, Accuracy Score = 94.33, Web URL = https://www.ebay.co.uk/itm/164775420243?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&hash=item265d616153:g:JIsAAOSwf1RgWPOi
+        Buy Price = £2.61, Postage Price = £4.49, Accuracy Score = 15.07, Web URL = https://www.ebay.co.uk/itm/387958039449?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&hash=item5a5419e399:g:NZEAAOSwTQJnLOE6
+        Buy Price = £8.00, Postage Price = £0.00, Accuracy Score = 8.24, Web URL = https://www.ebay.co.uk/itm/317075646754?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&hash=item49d32e6922:g:~VsAAeSwIF9ocWFm
+        Buy Price = £12.99, Postage Price = £0.00, Accuracy Score = 8.24, Web URL = https://www.ebay.co.uk/itm/205457259140?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&hash=item2fd634fa84:g:zAQAAeSwvzNoEmrf
+        Buy Price = £14.99, Postage Price = £0.00, Accuracy Score = 8.24, Web URL = https://www.ebay.co.uk/itm/297232174329?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&hash=item45346b0cf9:g:XgsAAOSw3NVoA7Vq
+        Buy Price = £3.01, Postage Price = £3.95, Accuracy Score = 0.91, Web URL = https://www.ebay.co.uk/itm/226860792119?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&hash=item34d1f4f937:g:-YAAAeSwrGBocRiN
+        Buy Price = £3.76, Postage Price = £0.00, Accuracy Score = 0.76, Web URL = https://www.ebay.co.uk/itm/388868335239?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&hash=item5a8a5be687:g:sUgAAeSwMq1oqGPo&amdata=enc%3AAQAKAAABEPeG5RIuIyokJHJy903%2F5UYJivRmy54tL%2BIScB0SigC0O2w359i03vgsaSRTqStzZ%2BF%2FzdEAuLzHHGk3CQJO1F4IMphpuDBFWgAGPFF57N1l2JAvohs0NF5kvRusMpvtGH05iikQ2Ug1GNilkuR2b25C1Unpjgm2eMNmOZ%2FivLeXrOjap2wNgysfKqn4pj7Gj7sMvEunI0%2F2A1pu%2Fu231uUrYGSDHML5wPDArA%2FHMEv71QIHePjL8iqmAUaD9JshRS%2FL7LKus6PqCwG3MIUt%2B7zABKgitN7pODjv3m4hg74anpfhksTjGm2SZWk6B7gzc11DbK7TArFFII30rTs%2BL5edAYVeMwTggfzYdnJ9aPNG
+        Buy Price = £9.79, Postage Price = £0.00, Accuracy Score = 0, Web URL = https://www.ebay.co.uk/itm/405707322651?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&var=675994397555&hash=item5e760a751b:g:1KIAAOSwshFn6GH0
+        Buy Price = £4.18, Postage Price = £0.00, Accuracy Score = 0, Web URL = https://www.ebay.co.uk/itm/267026574577?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&hash=item3e2c062cf1:g:YY8AAOSwGN5nC5Z8
+        Buy Price = £1.57, Postage Price = £2.94, Accuracy Score = 0, Web URL = https://www.ebay.co.uk/itm/226426322938?_skw=Sukin+Hydration+Rehydrating+Gel+Cream+60+ml&hash=item34b80f7ffa:g:9qYAAOSwi8xnI6d~&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5UZzJ9bDjqILp0vhYLrFNgp1pl5uuH4LgBWLUxEoFvaxDV0WMh3k%2FU5Iu7%2B%2B3OvBD94GDoZAWohzAD1wXOl6sQMpJvaTJPaoHE0FZakyYg1gQl8KAo4jqzZeBZSYqDSrcMGDeg10OlG0AqnmbmJBO9gfrROzT0Nhx3BG861anR7SZgSziuyv42E91RWWQPXaf%2F%2BRFcMiw3reJq1MoG7M6VsT70VQuK1rplgMRsd5kWd9eO341oxGwBu5JQHzro9f3%2FDefrpirUXymOJhvbCKlmpFd%2BW3HE2ZfspuboCyKbqY2uHK5LRaiV8T1b3CMNjl2rY%3D
+
+    Item Name = Freeman Energize Jelly Mask 89 ml, Quantity = 1, Listing Price = £5.10, Sell Price = £2.13, Buyer Protection Fee = £0.27, Postage Price = £2.70, Accuracy Score = 65.68, Name Certainty = 95.0%
+        Products in Item:
+        Buy Price = £2.40, Postage Price = £0.00, Accuracy Score = 95.41, Web URL = https://www.ebay.co.uk/itm/135383188501?_skw=Freeman+Energize+Jelly+Mask+89+ml&hash=item1f85778415:g:n24AAOSwbolnOhMS
+        Buy Price = £5.95, Postage Price = £0.00, Accuracy Score = 35, Web URL = https://www.ebay.co.uk/itm/196594101205?_skw=Freeman+Energize+Jelly+Mask+89+ml&hash=item2dc5ebebd5:g:3BgAAOSw4Ptm0jch
+        Buy Price = £2.75, Postage Price = £2.94, Accuracy Score = 35, Web URL = https://www.ebay.co.uk/itm/187219919239?_skw=Freeman+Energize+Jelly+Mask+89+ml&hash=item2b972d4187:g:2VwAAeSwG5JoI8-q
+        Buy Price = £7.58, Postage Price = £4.00, Accuracy Score = 35, Web URL = https://www.ebay.co.uk/itm/296822859664?_skw=Freeman+Energize+Jelly+Mask+89+ml&hash=item451c056790:g:DlIAAOSwJvtnOh87
+        Buy Price = £5.00, Postage Price = £3.50, Accuracy Score = 35, Web URL = https://www.ebay.co.uk/itm/365163140521?_skw=Freeman+Energize+Jelly+Mask+89+ml&hash=item55056b55a9:g:uJEAAOSwNRNnA613
+        Buy Price = £7.95, Postage Price = £0.00, Accuracy Score = 35, Web URL = https://www.ebay.co.uk/itm/176952180968?_skw=Freeman+Energize+Jelly+Mask+89+ml&hash=item29332c00e8:g:IJwAAOSwkEBmy0yY&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5UZZiUdhvxIJmF7FhF3NUsHFygsWK51KaGjVyZol7b6wtoaaNxtMwQAWMyUMUbIjiy%2F43FzrTkAkZhBHJG3Y66n2%2Fcda3gv87O5izd11r%2F0l4idALswLLeTsTIO1dYVyGdrulYkw%2B7C4JZy7BLsDCCpjHRow%2BSiy8ZyRL7yutfn75aHn67ggjlpYZ3o1EVV0V0bLlx5BpBwRiLjj0NWt7N7BiQlIcr643gx4OpWsUJvfqRCQizYFj%2B1PaOGqiHBXtrhvxhD94PWxz8uIWzY%2FOjgPduwrOov9cOET5CqSqnJCWrvn6X8BQfu%2B7AozSRRs910%3D
+        Buy Price = £3.73, Postage Price = £0.00, Accuracy Score = 33.41, Web URL = https://www.ebay.co.uk/itm/177151375584?_skw=Freeman+Energize+Jelly+Mask+89+ml&hash=item293f0b78e0:g:NqcAAOSwxhlm126D
+        Buy Price = £2.60, Postage Price = £2.94, Accuracy Score = 33.41, Web URL = https://www.ebay.co.uk/itm/146186952083?_skw=Freeman+Energize+Jelly+Mask+89+ml&hash=item22096bdd93:g:qGwAAOSwbhhnM2Sd
+        Buy Price = £3.28, Postage Price = £2.94, Accuracy Score = 16, Web URL = https://www.ebay.co.uk/itm/196692836346?_skw=Freeman+Energize+Jelly+Mask+89+ml&hash=item2dcbce7ffa:g:KaUAAOSwE5tm~wWQ
+
+    Item Name = AH-8 Firming Lifting Neck Cream 4.25 fl oz, Quantity = 1, Listing Price = £6.46, Sell Price = £4.33, Buyer Protection Fee = £0.43, Postage Price = £1.70, Accuracy Score = 24.28, Name Certainty = 70.0%
+        Products in Item:
+        Buy Price = £4.76, Postage Price = £0.00, Accuracy Score = 9.54, Web URL = https://www.ebay.co.uk/itm/357207119614?_skw=AH-8+Firming+Lifting+Neck+Cream+4.25+fl+oz&hash=item532b3416fe:g:xUcAAeSwo8RoY-hW
+        Buy Price = £4.76, Postage Price = £0.00, Accuracy Score = 9.54, Web URL = https://www.ebay.co.uk/itm/187379689830?_skw=AH-8+Firming+Lifting+Neck+Cream+4.25+fl+oz&hash=item2ba0b32966:g:BqcAAeSwRploY-hV
+        Buy Price = £15.57, Postage Price = £0.00, Accuracy Score = 9.54, Web URL = https://www.ebay.co.uk/itm/365849020349?_skw=AH-8+Firming+Lifting+Neck+Cream+4.25+fl+oz&hash=item552e4d07bd:g:wZIAAeSwTU1ovLPU
+
+    Item Name = Yes To Cucumbers Soothing Cooling Jelly Mask 100 ml, Quantity = 1, Listing Price = £6.23, Sell Price = £2.54, Buyer Protection Fee = £0.30, Postage Price = £3.39, Accuracy Score = 25.61, Name Certainty = 60.0%
+        Products in Item:
+        Buy Price = £15.95, Postage Price = £3.39, Accuracy Score = 10.95, Web URL = https://www.ebay.co.uk/itm/226712175859?_skw=Yes+To+Cucumbers+Soothing+Cooling+Jelly+Mask+100+ml&hash=item34c91944f3:g:F0YAAOSw~aloBG15
+        Buy Price = £2.84, Postage Price = £3.39, Accuracy Score = 9.98, Web URL = https://www.ebay.co.uk/itm/167664988444?_skw=Yes+To+Cucumbers+Soothing+Cooling+Jelly+Mask+100+ml&hash=item27099cb11c:g:rbsAAeSwIpdof4kT
+        Buy Price = £17.99, Postage Price = £3.49, Accuracy Score = 9.85, Web URL = https://www.ebay.co.uk/itm/156612595485?_skw=Yes+To+Cucumbers+Soothing+Cooling+Jelly+Mask+100+ml&hash=item2476d68f1d:g:YVYAAOSwj~5guA7i
+        Buy Price = £-0.07, Postage Price = £3.39, Accuracy Score = 7.75, Web URL = https://www.ebay.co.uk/itm/267374267274?_skw=Yes+To+Cucumbers+Soothing+Cooling+Jelly+Mask+100+ml&hash=item3e40bf8b8a:g:yMEAAeSwtupopaew
+
+    Item Name = Kate Somerville DermalQuench Liquid Lift 50 ml, Quantity = 1, Listing Price = £7.79, Sell Price = £4.41, Buyer Protection Fee = £0.44, Postage Price = £2.94, Accuracy Score = 30.82, Name Certainty = 60.0%
+        Products in Item:
+        Buy Price = £11.22, Postage Price = £2.94, Accuracy Score = 11.2, Web URL = https://www.ebay.co.uk/itm/177106939570?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item293c656eb2:g:aU8AAOSwPsVoK0i9
+        Buy Price = £8.29, Postage Price = £2.94, Accuracy Score = 11.2, Web URL = https://www.ebay.co.uk/itm/236222492650?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item36fff52fea:g:GHsAAeSwPyFogL91
+        Buy Price = £7.86, Postage Price = £2.94, Accuracy Score = 11.2, Web URL = https://www.ebay.co.uk/itm/406174536666?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item5e91e393da:g:n0gAAeSwQ4tos244
+        Buy Price = £12.80, Postage Price = £2.94, Accuracy Score = 11.2, Web URL = https://www.ebay.co.uk/itm/225965077530?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item349c91741a:g:zr4AAOSwNhxlqU6D&amdata=enc%3AAQAKAAABEPeG5RIuIyokJHJy903%2F5UbAM0R3tYuO6fcYW9wemuf85YDqvOuDfPL4IZ8EjTH1bQI5rBHCSl8vmp%2FD8n0orO%2BSG%2B89MQM%2BpGMlg2Yv4mW0otEZkVZ5jGRr26xuamAIe%2B3%2FqC5mjx7p4UglXCR5R7nqTeoyDbNdxw9IKlDv7F%2F9BdIEPUf3tq%2Bi%2Fa2kFHBCsJ5a0QAghD311JTg2ppXLVdlrku%2Fw20nwpop7p3PBvmg48YTUX0cpD62YIuAOYJvro73UJnSECTj8pz3YQ%2Ffo9P0ufiWO109C0Fnip5gm7SBVPP99vGaKHjCQmZ8F9kZYeH85gEDMFhPeIDxlswiBd7rl%2FeqjI3y8Nv3S39Tw0ux
+        Buy Price = £4.85, Postage Price = £2.94, Accuracy Score = 10.71, Web URL = https://www.ebay.co.uk/itm/286148306268?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item429fc4a55c:g:R2UAAOSwZZ9nK5Zy
+        Buy Price = £4.06, Postage Price = £2.94, Accuracy Score = 10.69, Web URL = https://www.ebay.co.uk/itm/296799372116?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item451a9f0354:g:QysAAOSwzAJnK5Yh&amdata=enc%3AAQAKAAABEPeG5RIuIyokJHJy903%2F5UYR2EbUMysIjArpb5dlOSJ3YD1E28N8FRrgxLyoHUpzi%2FFHQ1YXT8jtnNh5Vyq2C5%2B8bDs40XFkogeRHmIicT8hNT6OYu%2BFB2Cn%2ByZcAXeqP0Hgaq%2BQt6y3pMqppDCzmnac7UCSnev%2BlhcwIvmdWmn5tpFqKxYB1XDJnhhBHnBAct2I%2Fex226iHUWVLkVcdtVQtfkto6vr0HFkifDTiE4rwBuVnQgDfQ6NDhtCSs5YugQTkodOtilU3Ql4w2Uc5wUOFSaxphfzlTygiqCceUuPZM6nARwlOaV0fBtr8jymMd8oAEEmPHfJn37%2F%2BA0sWTdptL%2BVu22fwCTEVCpO4m0qb
+        Buy Price = £13.32, Postage Price = £2.94, Accuracy Score = 10.11, Web URL = https://www.ebay.co.uk/itm/145975519437?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item21fcd1a8cd:g:ua4AAOSwueBlnb7T
+        Buy Price = £13.32, Postage Price = £2.94, Accuracy Score = 9.97, Web URL = https://www.ebay.co.uk/itm/296979519073?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item45255bd661:g:mw0AAOSw~9FnnnJT
+        Buy Price = £4.01, Postage Price = £2.94, Accuracy Score = 8.85, Web URL = https://www.ebay.co.uk/itm/256775984614?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item3bc90a95e6:g:gc0AAOSwnfRnfZJk
+        Buy Price = £6.47, Postage Price = £2.94, Accuracy Score = 9.54, Web URL = https://www.ebay.co.uk/itm/375660890516?_skw=Kate+Somerville+DermalQuench+Liquid+Lift+50+ml&hash=item5777224994:g:tw0AAOSwkBRm7T28
+
+    Item Name = MUSE Energising Face Serum 30 ml, Quantity = 1, Listing Price = £8.73, Sell Price = £6.58, Buyer Protection Fee = £0.60, Postage Price = £1.55, Accuracy Score = 23.66, Name Certainty = 65.0%
+        Products in Item:
+        Buy Price = £7.18, Postage Price = £0.00, Accuracy Score = 8.23, Web URL = https://www.ebay.co.uk/itm/356551190908?_skw=MUSE+Energising+Face+Serum+30+ml&hash=item53041b697c:g:3CEAAeSwhx1nqOqX
+        Buy Price = £7.39, Postage Price = £0.00, Accuracy Score = 8.23, Web URL = https://www.ebay.co.uk/itm/297447274245?_skw=MUSE+Energising+Face+Serum+30+ml&hash=item45413d3705:g:Q~oAAeSwR4FoZYwN
+        Buy Price = £7.18, Postage Price = £0.00, Accuracy Score = 7.41, Web URL = https://www.ebay.co.uk/itm/356551190908?_skw=MUSE+Energising+Face+Serum+30+ml&hash=item53041b697c:g:3CEAAeSwhx1nqOqX
+        Buy Price = £7.39, Postage Price = £0.00, Accuracy Score = 7.41, Web URL = https://www.ebay.co.uk/itm/297447274245?_skw=MUSE+Energising+Face+Serum+30+ml&hash=item45413d3705:g:Q~oAAeSwR4FoZYwN
+
+    Item Name = by Amazon Almond & Orange Shower Cream 500 ml, Quantity = 1, Listing Price = £4.75, Sell Price = £1.81, Buyer Protection Fee = £0.24, Postage Price = £2.70, Accuracy Score = 27.52, Name Certainty = 75.0%
+        Products in Item:
+        Buy Price = £2.14, Postage Price = £0.00, Accuracy Score = 12.81, Web URL = https://www.ebay.co.uk/itm/335973384008?_skw=by+Amazon+Almond+&hash=item4e3992ff48:g:Xc0AAeSwZbVoLrRu
+        Buy Price = £1.96, Postage Price = £0.00, Accuracy Score = 8.73, Web URL = https://www.ebay.co.uk/itm/396840409959?_skw=by+Amazon+Almond+&hash=item5c65881b67:g:NH8AAeSwOzFobkwv
+        Buy Price = £2.04, Postage Price = £0.00, Accuracy Score = 7.54, Web URL = https://www.ebay.co.uk/itm/357278211327?_skw=by+Amazon+Almond+&hash=item532f70dcff:g:GvkAAeSwC0tocqDt
+        Buy Price = £1.53, Postage Price = £0.00, Accuracy Score = 4.47, Web URL = https://www.ebay.co.uk/itm/197659165644?_skw=by+Amazon+Almond+&hash=item2e056783cc:g:pggAAeSwC2Zos24m
+        Buy Price = £2.33, Postage Price = £0.00, Accuracy Score = 4.37, Web URL = https://www.ebay.co.uk/itm/226949752152?_skw=by+Amazon+Almond+&hash=item34d7426558:g:KUkAAeSw~4Zos25l
+        Buy Price = £1.27, Postage Price = £0.00, Accuracy Score = 4.37, Web URL = https://www.ebay.co.uk/itm/297404747864?_skw=by+Amazon+Almond+&hash=item453eb45058:g:R~4AAOSwduBoSqeX
+        Buy Price = £2.46, Postage Price = £0.00, Accuracy Score = 4.37, Web URL = https://www.ebay.co.uk/itm/256975697216?_skw=by+Amazon+Almond+&hash=item3bd4f1f540:g:rUIAAOSwQv9n8RS2
+        Buy Price = £1.21, Postage Price = £0.00, Accuracy Score = 4.23, Web URL = https://www.ebay.co.uk/itm/335732773648?_skw=by+Amazon+Almond+&hash=item4e2b3b9310:g:gPkAAOSwdCRnYIZY
+        Buy Price = £1.07, Postage Price = £0.00, Accuracy Score = 0.1, Web URL = https://www.ebay.co.uk/itm/326652058784?_skw=by+Amazon+Almond+&hash=item4c0dfadca0:g:o1wAAOSwr5doVuaU&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZnTrIgPPu5KCc395vkziUdVMZJ5PfL4weh3n%2BBSGZtruVskI63kIKdM6Nm6JCYw%2Box5QNp1hlFhQumvg5Pm20E5K0YAkjP2vHJsgSUBR%2B7vqMVWp4DGmYs%2By9h2qucKKij%2Bj5KiioIW2jklsYao2mgnFxxXC6jifh8Uv6wtNW8eSQEYd8RMSLrYEgO7nNXccrtE5hrzY1C2e4hQNejjho5iwpHmNzYsnbgALNi8cYUvEWP0k4%2F4fbQ0be9dF1nt0Ehdb51cCZCWiO53bgr2qpvXV1eJN5KQkVM41zKbZk9gg%3D%3D
+        Buy Price = £125.43, Postage Price = £2.94, Accuracy Score = 0.03, Web URL = https://www.ebay.co.uk/itm/136429978189?_skw=by+Amazon+Almond+&hash=item1fc3dc424d:g:0mkAAeSwQARoSYIy&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Uavl5ymOgBsuesv36ILf7o2kD8x00LE6dyZX1sHY41XQMbx--oR7xSZzLQ9I2%2BSvwdOtV0YvCyMFQGL8R3r63jFHvgIsSHtEd5nsTO0eOnlpTYvLQfpYRc850YfX1cJFw%2BQICzzS7RUs9u3qx3Ky2pzZNKsUJ5gSG4YpQ%2FDk8w0aGXcgg2%2F5YUdKL4eU5Hyuw7%2BxzMDrq3YaDn0%2BcbxXfBmn64mO4EO6tHOX3dl%2B6N4dZB88JGVJGsC4lZKI9pgWaCBa0ErPehNA7Pacv0OnbYHbsLd%2FVjSVD4ppzuJwgCYJQ%3D%3D
+
+    Item Name = Beauty Kitchen Inspire Me Instant Hydration Body Oil 100 ml, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 70.0%
+        Products in Item:
+
+    Item Name = Beauty Kitchen Inspire Me Body Oil Firming & Toning 100 ml, Quantity = 1, Listing Price = £11.41, Sell Price = £7.84, Buyer Protection Fee = £0.70, Postage Price = £2.87, Accuracy Score = 23.08, Name Certainty = 70.0%
+        Products in Item:
+        Buy Price = £8.54, Postage Price = £2.87, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/386063714545?_skw=Beauty+Kitchen+Inspire+Me+Body+Oil+Firming+&hash=item59e330c8f1:g:mgcAAOSwEQ1k7dZs
+        Buy Price = £8.54, Postage Price = £2.87, Accuracy Score = 8, Web URL = https://www.ebay.co.uk/itm/386063714545?_skw=Beauty+Kitchen+Inspire+Me+Body+Oil+Firming+&hash=item59e330c8f1:g:mgcAAOSwEQ1k7dZs
+        Buy Price = £8.54, Postage Price = £2.87, Accuracy Score = 7.2, Web URL = https://www.ebay.co.uk/itm/386063714545?_skw=Beauty+Kitchen+Inspire+Me+Body+Oil+Firming+&hash=item59e330c8f1:g:mgcAAOSwEQ1k7dZs
+
+    Item Name = Beauty Kitchen Abyssinian Oil Handbag Beauty Balm 60 ml, Quantity = 1, Listing Price = £12.21, Sell Price = £8.75, Buyer Protection Fee = £0.77, Postage Price = £2.69, Accuracy Score = 24.81, Name Certainty = 55.00000000000001%
+        Products in Item:
+        Buy Price = £9.52, Postage Price = £2.69, Accuracy Score = 12.85, Web URL = https://www.ebay.co.uk/itm/267332688244?_skw=Beauty+Kitchen+Abyssinian+Oil+Handbag+Beauty+Balm+60+ml&hash=item3e3e451974:g:ijcAAeSwphVoe6E~
+        Buy Price = £9.00, Postage Price = £2.94, Accuracy Score = 5.56, Web URL = https://www.ebay.co.uk/itm/286806757609?_skw=Beauty+Kitchen+Abyssinian+Oil+Handbag+Beauty+Balm+60+ml&hash=item42c703d0e9:g:y1AAAeSwzKpovLhx
+        Buy Price = £25.43, Postage Price = £4.25, Accuracy Score = 5.56, Web URL = https://www.ebay.co.uk/itm/316850442815?_skw=Beauty+Kitchen+Abyssinian+Oil+Handbag+Beauty+Balm+60+ml&hash=item49c5c2123f:g:57QAAeSwe6toMHEV
+        Buy Price = £21.41, Postage Price = £3.89, Accuracy Score = 3.5, Web URL = https://www.ebay.co.uk/itm/326261282980?_skw=Beauty+Kitchen+Abyssinian+Oil+Handbag+Beauty+Balm+60+ml&hash=item4bf6b018a4:g:AMQAAOSwNLFlDz-O
+
+    Item Name = Bio-Ene Age-Defy Under Eye Patches 12 pairs, Quantity = 1, Listing Price = £0.00, Sell Price = £0.00, Buyer Protection Fee = £0.00, Postage Price = £0.00, Accuracy Score = 0, Name Certainty = 60.0%
+        Products in Item:
+
+    Item Name = No7 Radiance Vitamin C Serum 30 ml, Quantity = 1, Listing Price = £11.08, Sell Price = £7.47, Buyer Protection Fee = £0.67, Postage Price = £2.94, Accuracy Score = 31.98, Name Certainty = 50.0%
+        Products in Item:
+        Buy Price = £8.14, Postage Price = £2.94, Accuracy Score = 13.68, Web URL = https://www.ebay.co.uk/itm/357556261599?_skw=No7+Radiance+Vitamin+C+Serum+30+ml&hash=item53400392df:g:XY8AAeSwglVotpfV
+        Buy Price = £13.42, Postage Price = £2.94, Accuracy Score = 13.68, Web URL = https://www.ebay.co.uk/itm/386755129041?_skw=No7+Radiance+Vitamin+C+Serum+30+ml&hash=item5a0c66eed1:g:zM8AAeSw9rJoZUUk
+        Buy Price = £13.32, Postage Price = £2.94, Accuracy Score = 13.68, Web URL = https://www.ebay.co.uk/itm/395358919804?_skw=No7+Radiance+Vitamin+C+Serum+30+ml&hash=item5c0d3a5c7c:g:fQ0AAeSw-ZVoe~E~
+        Buy Price = £15.02, Postage Price = £2.94, Accuracy Score = 13.68, Web URL = https://www.ebay.co.uk/itm/226944284084?_skw=No7+Radiance+Vitamin+C+Serum+30+ml&hash=item34d6eef5b4:g:jEMAAeSwspFor3ab
+        Buy Price = £6.96, Postage Price = £2.94, Accuracy Score = 13.06, Web URL = https://www.ebay.co.uk/itm/376469036693?_skw=No7+Radiance+Vitamin+C+Serum+30+ml&hash=item57a74d9e95:g:bW8AAeSwbKFol3W5
+        Buy Price = £19.33, Postage Price = £2.94, Accuracy Score = 10, Web URL = https://www.ebay.co.uk/itm/297583290702?_skw=No7+Radiance+Vitamin+C+Serum+30+ml&hash=item454958a94e:g:ojYAAeSwxFVotuS6
+        Buy Price = £19.05, Postage Price = £2.94, Accuracy Score = 10, Web URL = https://www.ebay.co.uk/itm/167688690045?_skw=No7+Radiance+Vitamin+C+Serum+30+ml&hash=item270b06597d:g:tZUAAOSw9llk8v87
+        Buy Price = £11.82, Postage Price = £2.94, Accuracy Score = 10, Web URL = https://www.ebay.co.uk/itm/317178134423?_skw=No7+Radiance+Vitamin+C+Serum+30+ml&hash=item49d94a3f97:g:1~UAAeSwrLxongRQ&amdata=enc%3AAQAKAAABAPeG5RIuIyokJHJy903%2F5UZ02qOShGNKLroIyKvl6LoUrdFuLEZeiFl94RESZLssVgSKmBR9zphbbwQ5YSFJyslRiXVYYnr4sAxBpCjKYxRoLm1FFW3LwHGeYvw3ePLeDJy5TKRtl319EkxqiGH17jUhclcEjoUnZhyj0ZNhQ0zigL5QSHKrP88kUtuMG%2BR%2FvGG7rWtOGVbkIfxveOKHjq9w%2FuYC3FEn6Pmv46KpMXXPTeVT0MaW16WAyBspRlmktJX6WoUokijpY8Og0h%2FAJzPLxtIIbf6E5Dib4ZRENQe6b%2FCazWYsd74KiYpmK5neZpFK9US%2Fb45QGLRBnHmUDkg%3D
+        Buy Price = £13.82, Postage Price = £2.94, Accuracy Score = 8.29, Web URL = https://www.ebay.co.uk/itm/365824525280?_skw=No7+Radiance+Vitamin+C+Serum+30+ml&hash=item552cd743e0:g:A34AAeSwxDdoraxu
+

@@ -366,7 +366,9 @@ class FileHandler:
               in append mode to prepare for subsequent writes.
         """
         self.current_time = datetime.now().strftime("%H-%M-%S")
+        os.makedirs(f'./Extracted_Info/{self.current_date}/{self.current_time}', exist_ok=True)
         f = open(f"./Extracted_Info/{self.current_date}/{self.current_time}.txt", "a")
+        f.write("No data yet.\n")
 
     def get_auto_searches(self):
         """

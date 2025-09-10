@@ -60,7 +60,7 @@ class ProductCleaner(GoodCleaner):
         """
         item_units, item_values = self.get_measurements(item)
         self.set_name(product, item)
-        self.adjust_quantities(product)
+        self.adjust_quantities(item, product)
         self.adjust_measurements(product, item_units, item_values)
         super().clean_basic(product)
 
@@ -89,7 +89,7 @@ class ProductCleaner(GoodCleaner):
                     product.brand_name = ""
                     product.brand_name = item.brand_name
                     product.variant_name = re.sub(
-                        rf'\b{re.escape(item.brand_name)}\b', '', product.name, flags=re.IGNORECASE
+                        rf'\b{re.escape(item.brand_name)}\b', ' ', product.name, flags=re.IGNORECASE
                     ).strip()
                 else:
                     # Brand present in item but not found in product name -> unknown brand for product.
@@ -130,7 +130,7 @@ class ProductCleaner(GoodCleaner):
             item_values = []
         return item_units, item_values
 
-    def adjust_quantities(self, product):
+    def adjust_quantities(self, item, product):
         """
         Detect multiplicative quantity expressions and renormalize price/score.
 
@@ -147,16 +147,26 @@ class ProductCleaner(GoodCleaner):
 
         Note: Exponents are heuristic dampeners to avoid overly aggressive scaling.
         """
+        divisor = 1
         product_token_set = TokenSet(good=product)
-        divisor = self.clean_pack(product, product_token_set)
+        divisor = max(divisor, self.clean_pack(product, product_token_set))
+        product_token_set = TokenSet(good=product)
         divisor = max(divisor, self.clean_x(product, product_token_set))
+        product_token_set = TokenSet(good=product)
+        item_token_set = TokenSet(good=item)
+        divisor = max(divisor, self.clean_start(product, product_token_set, item_token_set))
         product.variant_name = product.variant_name.strip()
 
         if divisor > 1:
             if product.postage_price > 0:
-                product.listing_price = round((product.listing_price - product.postage_price)  / (divisor ** 0.96), 2)
+                product.listing_price = (round((product.listing_price - product.postage_price)  / (divisor ** 0.96), 2)) + product.postage_price
             else:
-                product.listing_price = round((product.listing_price - 2.7)  / (divisor ** 0.96), 2)
+                all_postage_price = [p.postage_price for p in item.products if p.postage_price > 0]
+                if len(all_postage_price) > 0:
+                    temp_postage_price = np.median(all_postage_price)
+                else:
+                    temp_postage_price = 2.7
+                product.listing_price = (round((product.listing_price - temp_postage_price)  / (divisor ** 0.96), 2)) + temp_postage_price
             product.buy_price = round(product.listing_price - product.postage_price, 2)
             product.accuracy_score = round(
                 product.accuracy_score * (1 - (.03 * (divisor ** 0.6))), 2
@@ -178,6 +188,16 @@ class ProductCleaner(GoodCleaner):
         product_token_set = TokenSet(good=product)
         self.convert_product_units(product, product_token_set, item_units)
         self.convert_values(product, product_token_set, item_units, item_values)
+
+    def clean_start(self, product, product_token_set, item_token_set):
+        
+        divisor = 1
+        if product_token_set.variant_name_normalized[0].isdigit() and not product_token_set.variant_name_normalized[0] == item_token_set.variant_name_normalized[0]:
+            product.variant_name = re.sub(
+                re.escape(product_token_set.variant_name_raw[0]), ' ', product.variant_name, count=1, flags=re.IGNORECASE
+            ).strip()
+            divisor = float(product_token_set.variant_name_normalized[0])
+        return divisor
 
     def clean_pack(self, product, product_token_set):
         """
@@ -378,7 +398,7 @@ class ProductCleaner(GoodCleaner):
                         )
                         product.variant_name = re.sub(
                             re.escape(f"{token_raw}{after_raw}"),
-                            f"{value}{item_units[units_index]}",
+                            f"{value}{item_units[units_index]} ",
                             product.variant_name, flags=re.IGNORECASE
                         )
                         units_index += 1
@@ -415,7 +435,7 @@ class ProductCleaner(GoodCleaner):
                         # Normalize display value to the canonical item value.
                         product.variant_name = re.sub(
                             re.escape(f'{token_raw}{after_raw}'),
-                            f'{str(item_value)}{after_raw}',
+                            f'{str(item_value)}{after_raw} ',
                             product.variant_name, flags=re.IGNORECASE
                         )
 

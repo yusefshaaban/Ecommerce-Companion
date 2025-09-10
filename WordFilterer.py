@@ -157,7 +157,7 @@ class WordFilterer:
                 updated_tokens.append(token)
         product.variant_name = "".join(updated_tokens)
     
-    def is_key_word(self, word):
+    def is_key_word(self, word, key_filters = ['NOUN']):
         """
         Heuristic to determine whether a word is a "key" term.
 
@@ -175,9 +175,29 @@ class WordFilterer:
         if not word:
             return False
         token = nlp(word)[0]
-        if token.pos_ in ['NOUN']:
+        if token.pos_ in key_filters:
             return True
         return False
+    
+    def get_tag(self, word):
+        """
+        Get the spaCy POS tag for a given word.
+
+        Parameters
+        ----------
+        word : str | None
+            A single token string.
+
+        Returns
+        -------
+        str | None
+            The spaCy POS tag (e.g., 'NOUN', 'PROPN') if the input is valid;
+            None for falsy inputs.
+        """
+        if not word:
+            return None
+        token = nlp(word)[0]
+        return token.pos_
 
 if __name__ == "__main__":
     # Example usage (left unchanged):

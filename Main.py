@@ -152,7 +152,14 @@ class Main:
                 variant_name = variant_names.split(",")[i].strip() if i < num_variants else ""
                 name = (brand_name + " " + variant_name).strip()
                 item = Item(name, brand_name, variant_name, 1)
-                self.item_processor.process(item)
+                params={
+                    "filter": f"filter=",
+                    "buyingOptions": f"buyingOptions:{{FIXED_PRICE}}",
+                    "conditions": f"conditions:{{NEW}}",
+                    "deliveryCountry": f"deliveryCountry:GB",
+                    "itemLocationCountry": f"itemLocationCountry:GB"
+                }
+                self.item_processor.process(item, params)
                 items.append(item)
             for item in items:
                 print("\n")

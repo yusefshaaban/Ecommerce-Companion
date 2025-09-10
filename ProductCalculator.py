@@ -30,11 +30,14 @@ EXACT_INCLUSIVE_MATCH_SCORE = 0.85
 EXACT_INCLUSIVE_CASE_INSENSITIVE_MATCH_SCORE = 0.83
 EXACT_NO_SPACES_MATCH_SCORE = 0.97
 EXACT_INCLUSIVE_CASE_INSENSITIVE_NO_SPACES_MATCH_SCORE = 0.81
-EXACT_CLOSENESS_MATCH_SCORE = 0.6
-P85_CLOSENESS_MATCH_SCORE = 0.3
-P70_CLOSENESS_MATCH_SCORE = 0.21
-P50_CLOSENESS_MATCH_SCORE = 0.15
-P33_CLOSENESS_MATCH_SCORE = 0.1
+EXACT_CLOSENESS_MATCH_SCORE = 0.75
+P90_CLOSENESS_MATCH_SCORE = 0.6
+P80_CLOSENESS_MATCH_SCORE = 0.56
+P70_CLOSENESS_MATCH_SCORE = 0.41
+P60_CLOSENESS_MATCH_SCORE = 0.36
+P50_CLOSENESS_MATCH_SCORE = 0.3
+P40_CLOSENESS_MATCH_SCORE = 0.23
+P30_CLOSENESS_MATCH_SCORE = 0.15
 
 def set_accuracy(item, product):
     """
@@ -96,6 +99,10 @@ def calculate_accuracy_is_match(item, product):
     if item.variant_name in product.variant_name:
         # Item variant appears within product variant (case-sensitive).
         adjust_accuracy_for_context(item, product, True)
+        item_token_set = TokenSet(good=item)
+        product_token_set = TokenSet(good=product)
+        adjust_accuracy_for_end(item, product, item_token_set, product_token_set)
+
 
         is_number = any(char.isdigit() for char in item.variant_name)
         if is_number:
@@ -113,6 +120,9 @@ def calculate_accuracy_is_match(item, product):
     if item.name.lower() in product.name.lower():
         # Item name appears within product name (case-insensitive).
         adjust_accuracy_for_context(item, product, True)
+        item_token_set = TokenSet(good=item)
+        product_token_set = TokenSet(good=product)
+        adjust_accuracy_for_end(item, product, item_token_set, product_token_set)
 
         is_number = any(char.isdigit() for char in item.name)
         if is_number:
@@ -192,10 +202,12 @@ def calculate_accuracy_no_match( item, product):
           searched token processed (not totals). This behavior is preserved
           intentionally here.
     """
-    adjust_accuracy_for_context(item, product, False)
 
     item_token_set = TokenSet(good=item)
     product_token_set = TokenSet(good=product)
+
+    adjust_accuracy_for_context(item, product, False)
+    adjust_accuracy_for_end(item, product, item_token_set, product_token_set)
 
     searched_words = item_token_set.variant_name_normalized
     product_name_words = product_token_set.variant_name_normalized
@@ -225,6 +237,28 @@ def calculate_accuracy_no_match( item, product):
         product.accuracy_score = 0
         return
 
+    filtered_product_token_set = [token for token in product_token_set.variant_name_normalized if not token.isdigit()]
+    filtered_item_token_set = [token for token in item_token_set.variant_name_normalized if not token.isdigit()]
+
+    if len(filtered_product_token_set) < len(filtered_item_token_set):
+        if abs(len(filtered_product_token_set) - num_parts_match) == 1:
+            product.accuracy_score *= .97
+        elif abs(len(filtered_product_token_set) - num_parts_match) == 2:
+            product.accuracy_score *= .92
+        elif abs(len(filtered_product_token_set) - num_parts_match) == 3:
+            product.accuracy_score *= .87
+        else:
+            product.accuracy_score *= .8
+    else:
+        if abs(len(filtered_product_token_set) - num_parts_match) == 1:
+            product.accuracy_score *= .75
+        elif abs(len(filtered_product_token_set) - num_parts_match) == 2:
+            product.accuracy_score *= .7
+        elif abs(len(filtered_product_token_set) - num_parts_match) == 3:
+            product.accuracy_score *= .65
+        else:
+            product.accuracy_score *= .6
+
     # Graduated multipliers by closeness band, with nuanced nudges for numerics.
     if search_closeness == 1:
         if (len(searched_words) // 5) < numbers_in_name:
@@ -235,21 +269,33 @@ def calculate_accuracy_no_match( item, product):
             product.accuracy_score *= (EXACT_CLOSENESS_MATCH_SCORE - .05)
         else:
             product.accuracy_score *= (EXACT_CLOSENESS_MATCH_SCORE - .25)
-    elif search_closeness < .33:
+    elif search_closeness < .3:
         product.accuracy_score *= .01
-    elif search_closeness < .5:
+    elif search_closeness < .4:
         if numbers_in_name:
             if (len(searched_words) // 5) < numbers_in_name:
-                product.accuracy_score *= P33_CLOSENESS_MATCH_SCORE
+                product.accuracy_score *= P30_CLOSENESS_MATCH_SCORE
             elif (len(searched_words) // 2) < numbers_in_name:
-                product.accuracy_score *= (P33_CLOSENESS_MATCH_SCORE + .02)
+                product.accuracy_score *= (P30_CLOSENESS_MATCH_SCORE + .02)
             else:
-                product.accuracy_score *= (P33_CLOSENESS_MATCH_SCORE - .01)
+                product.accuracy_score *= (P30_CLOSENESS_MATCH_SCORE - .01)
             if numbers_in_name == numbers_match:
                 product.accuracy_score *= .2
         else:
-            product.accuracy_score *= (P33_CLOSENESS_MATCH_SCORE - .02)
-    elif search_closeness < .7:
+            product.accuracy_score *= (P30_CLOSENESS_MATCH_SCORE - .02)
+    elif search_closeness < .5:
+        if numbers_in_name:
+            if (len(searched_words) // 5) < numbers_in_name:
+                product.accuracy_score *= P40_CLOSENESS_MATCH_SCORE
+            elif (len(searched_words) // 2) < numbers_in_name:
+                product.accuracy_score *= (P40_CLOSENESS_MATCH_SCORE + .03)
+            else:
+                product.accuracy_score *= (P40_CLOSENESS_MATCH_SCORE - .02)
+            if numbers_in_name != numbers_match:
+                product.accuracy_score *= .2
+        else:
+            product.accuracy_score *= (P40_CLOSENESS_MATCH_SCORE - .05)
+    elif search_closeness < .6:
         if numbers_in_name:
             if (len(searched_words) // 5) < numbers_in_name:
                 product.accuracy_score *= P50_CLOSENESS_MATCH_SCORE
@@ -261,7 +307,19 @@ def calculate_accuracy_no_match( item, product):
                 product.accuracy_score *= .2
         else:
             product.accuracy_score *= (P50_CLOSENESS_MATCH_SCORE - .05)
-    elif search_closeness < .85:
+    elif search_closeness < .7:
+        if numbers_in_name:
+            if (len(searched_words) // 5) < numbers_in_name:
+                product.accuracy_score *= P60_CLOSENESS_MATCH_SCORE
+            elif (len(searched_words) // 2) < numbers_in_name:
+                product.accuracy_score *= (P60_CLOSENESS_MATCH_SCORE + .03)
+            else:
+                product.accuracy_score *= (P60_CLOSENESS_MATCH_SCORE - .02)
+            if numbers_in_name != numbers_match:
+                product.accuracy_score *= P60_CLOSENESS_MATCH_SCORE * .2
+        else:
+            product.accuracy_score *= (P60_CLOSENESS_MATCH_SCORE - .05)
+    elif search_closeness < .8:
         if numbers_in_name:
             if (len(searched_words) // 5) < numbers_in_name:
                 product.accuracy_score *= P70_CLOSENESS_MATCH_SCORE
@@ -270,21 +328,34 @@ def calculate_accuracy_no_match( item, product):
             else:
                 product.accuracy_score *= (P70_CLOSENESS_MATCH_SCORE - .02)
             if numbers_in_name != numbers_match:
-                product.accuracy_score = P70_CLOSENESS_MATCH_SCORE * .2
+                product.accuracy_score *= P70_CLOSENESS_MATCH_SCORE * .2
         else:
             product.accuracy_score *= (P70_CLOSENESS_MATCH_SCORE - .05)
-    else:
+    elif search_closeness < .9:
         if numbers_in_name:
-            if (numbers_in_name) < numbers_in_name:
-                product.accuracy_score *= P85_CLOSENESS_MATCH_SCORE
+            if (len(searched_words) // 5) < numbers_in_name:
+                product.accuracy_score *= P80_CLOSENESS_MATCH_SCORE
             elif (len(searched_words) // 2) < numbers_in_name:
-                product.accuracy_score *= (P85_CLOSENESS_MATCH_SCORE + .03)
+                product.accuracy_score *= (P80_CLOSENESS_MATCH_SCORE + .03)
             else:
-                product.accuracy_score *= (P85_CLOSENESS_MATCH_SCORE - .02)
+                product.accuracy_score *= (P80_CLOSENESS_MATCH_SCORE - .02)
             if numbers_in_name != numbers_match:
                 product.accuracy_score *= .2
         else:
-            product.accuracy_score = (P85_CLOSENESS_MATCH_SCORE - .2)         
+            product.accuracy_score *= (P80_CLOSENESS_MATCH_SCORE - .2)
+    else:
+        if numbers_in_name:
+            if (len(searched_words) // 5) < numbers_in_name:
+                product.accuracy_score *= P90_CLOSENESS_MATCH_SCORE
+            elif (len(searched_words) // 2) < numbers_in_name:
+                product.accuracy_score *= (P90_CLOSENESS_MATCH_SCORE + .03)
+            else:
+                product.accuracy_score *= (P90_CLOSENESS_MATCH_SCORE - .02)
+            if numbers_in_name != numbers_match:
+                product.accuracy_score *= .2
+        else:
+            product.accuracy_score *= (P90_CLOSENESS_MATCH_SCORE - .2)
+
 
 def adjust_accuracy_for_context(item, product, match):
     """
@@ -370,6 +441,8 @@ def adjust_accuracy_for_context(item, product, match):
                 product.accuracy_score *= .6
             re.sub('for', '', product_name_original_part, flags=re.IGNORECASE)
 
+        if "no" in product.original_variant_name.lower() and "no" not in item.original_variant_name.lower():
+            product.accuracy_score *= .9
     # --- Inspect words AFTER the item name (variant-focused) and penalize certain keywords. ---
     if match:
         m = re.search(re.escape(item_name_original_part) + r'((?:\s+\w+){0,2})', product.original_variant_name, re.IGNORECASE)
@@ -402,3 +475,30 @@ def adjust_accuracy_for_context(item, product, match):
             product.accuracy_score *= .85
         else:
             product.accuracy_score *= .97
+
+    if "no" in product.original_variant_name.lower() and "no" not in item.original_variant_name.lower():
+        product.accuracy_score *= .9
+
+def adjust_accuracy_for_end(item, product, item_token_set, product_token_set):
+    """
+    Additional heuristic: if the product name doesn't end with the item variant name,
+    apply a small boost to the accuracy score.
+
+    Side effects:
+        Mutates `product.accuracy_score` in place.
+    """
+    if product_token_set.original_variant_name_normalized[-1] == item_token_set.original_variant_name_normalized[-1]:
+        product.accuracy_score *= .99
+    else:
+        word_filterer = WordFilterer()
+        filter = word_filterer.get_tag(item_token_set.original_variant_name_normalized[-1])
+        if word_filterer.is_key_word(product_token_set.original_variant_name_normalized[-1], [filter]):
+            product.accuracy_score *= .95
+        else:
+            product.accuracy_score *= .85
+        filter = word_filterer.get_tag(item_token_set.variant_name_normalized[-1])
+        if word_filterer.is_key_word(product_token_set.variant_name_normalized[-1], [filter]):
+            product.accuracy_score *= .95
+        else:
+            product.accuracy_score *= .85
+    # print(f"Adjusted for product name: {product.original_variant_name}: {product.accuracy_score}")

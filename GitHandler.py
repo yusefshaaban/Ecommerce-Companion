@@ -2,7 +2,14 @@ import subprocess
 from pathlib import Path
 
 def sh(args, cwd="."):
-    return subprocess.run(args, cwd=cwd, check=True, capture_output=True, text=True)
+    try:
+        res = subprocess.run(args, cwd=cwd, check=True, capture_output=True, text=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error occurred while running command: {e}")
+        print(f"Stdout: {e.stdout}")
+        print(f"Stderr: {e.stderr}")
+        return e
+    return res
 
 def in_progress(repo: Path) -> bool:
     try:

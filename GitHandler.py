@@ -119,7 +119,7 @@ def self_push_all(repo_target: str | Path | Iterable[str | Path] = "."):
     except subprocess.CalledProcessError as e:
         msg = (e.stdout or "") + (e.stderr or "")
         if "nothing to commit" in msg.lower() or "your branch is up to date" in msg.lower():
-            print("No changes to commit.")
+            pass  # No changes to commit
         else:
             raise
 
@@ -128,15 +128,13 @@ def self_push_all(repo_target: str | Path | Iterable[str | Path] = "."):
         if has_upstream(repo_root):
             try:
                 sh(["git", "push"], cwd=repo_root)
-                print("Pushed successfully.")
             except subprocess.CalledProcessError as e:
-                print("Push failed:", e.stderr or e.stdout)
+                print("Push failed:", e.stderr or e.stdout, "Please contact the developer.")
         else:
             try:
                 sh(["git", "push", "-u", "origin", branch], cwd=repo_root)
-                print("Pushed successfully (set upstream).")
             except subprocess.CalledProcessError as e:
-                print("Push failed:", e.stderr or e.stdout)
+                print("Push failed:", e.stderr or e.stdout, "Please contact the developer.")
 
 if __name__ == "__main__":
     # Any of these forms now work:

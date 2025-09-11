@@ -56,7 +56,7 @@ class ProductCleaner(GoodCleaner):
 
         Side Effects:
             Mutates `product` fields: name, brand_name, variant_name,
-            listing_price, accuracy_score, original_brand_name, original_variant_name.
+            total_price, accuracy_score, original_brand_name, original_variant_name.
         """
         item_units, item_values = self.get_measurements(item)
         self.set_name(product, item)
@@ -142,7 +142,7 @@ class ProductCleaner(GoodCleaner):
         Behavior:
           * Remove these expressions from the variant name for display.
           * Infer a `divisor` (number of units) and scale:
-              - listing_price /= divisor ** 0.96
+              - total_price /= divisor ** 0.96
               - accuracy_score *= (1 - (0.03 * divisor ** 0.6))
 
         Note: Exponents are heuristic dampeners to avoid overly aggressive scaling.
@@ -159,15 +159,15 @@ class ProductCleaner(GoodCleaner):
 
         if divisor > 1:
             if product.postage_price > 0:
-                product.listing_price = (round((product.listing_price - product.postage_price)  / (divisor ** 0.96), 2)) + product.postage_price
+                product.total_price = (round((product.total_price - product.postage_price)  / (divisor ** 0.96), 2)) + product.postage_price
             else:
                 all_postage_price = [p.postage_price for p in item.products if p.postage_price > 0]
                 if len(all_postage_price) > 0:
                     temp_postage_price = np.median(all_postage_price)
                 else:
                     temp_postage_price = 2.7
-                product.listing_price = (round((product.listing_price - temp_postage_price)  / (divisor ** 0.96), 2)) + temp_postage_price
-            product.buy_price = round(product.listing_price - product.postage_price, 2)
+                product.total_price = (round((product.total_price - temp_postage_price)  / (divisor ** 0.96), 2)) + temp_postage_price
+            product.buy_price = round(product.total_price - product.postage_price, 2)
             product.accuracy_score = round(
                 product.accuracy_score * (1 - (.03 * (divisor ** 0.6))), 2
             )
@@ -412,7 +412,7 @@ class ProductCleaner(GoodCleaner):
         For the first occurrence where product unit matches `item_units[0]`:
           - Replace the displayed numeric value with `item_values[0]`.
           - Compute divisor = product_value / item_value and scale:
-              * If divisor != 1: listing_price /= divisor ** 0.59
+              * If divisor != 1: total_price /= divisor ** 0.59
               * If divisor > 1: degrade accuracy_score proportionally
               * If divisor is very large (>=30): accuracy_score -> 0
           - Pop the matched unit/value so subsequent occurrences consider the next pair.
@@ -442,8 +442,8 @@ class ProductCleaner(GoodCleaner):
                         # Price scaling heuristic; smaller packs often less cost-efficient,
                         # exponent dampens the adjustment.
                         if divisor != 1:
-                            product.listing_price = round(
-                                product.listing_price / ((divisor ** .59)),
+                            product.total_price = round(
+                                product.total_price / ((divisor ** .59)),
                                 2
                             )
 
@@ -479,12 +479,12 @@ if __name__ == "__main__":
     product = Product(
         "John frieda Maybelline Dream Urban Cover Foundation - SPF50 - 30g - Choose Your Shade",
         "1",
-        listing_price=13.5,
+        total_price=13.5,
     )
 
     cleaner = ProductCleaner()
     cleaner.clean(product, item)
 
     print(f"Cleaned product name: {product.name}")
-    print(f"Adjusted product buy price: {product.listing_price}")
+    print(f"Adjusted product buy price: {product.total_price}")
     print(f"Adjusted product accuracy score: {product.accuracy_score}")

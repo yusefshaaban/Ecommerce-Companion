@@ -50,18 +50,19 @@ def rebase_onto_upstream(repo: Path):
 
     # Stash if dirty, then rebase
     dirty = bool(sh(["git", "status", "--porcelain"], cwd=repo).stdout.strip())
-    sh(["git", "stash", "push", "--include-untracked", "-m", "autostash-before-rebase"], cwd=repo)
+    if dirty:
+        sh(["git", "stash", "push", "--include-untracked", "-m", "autostash-before-rebase"], cwd=repo)
 
     try:
         # Always rebase, never merge
         sh(["git", "rebase", "@{u}"], cwd=repo)
     finally:
-        try:
-            sh(["git", "stash", "pop"], cwd=repo)
-        except subprocess.CalledProcessError as e:
-            # print("Stash pop had conflicts; leaving changes to resolve. ",
-            #       (e.stderr or e.stdout or "").strip())
-            pass
+        if dirty:
+            try:
+                sh(["git", "stash", "pop"], cwd=repo)
+            except subprocess.CalledProcessError as e:
+                print("Stash pop had conflicts; leaving changes to resolve. ",
+                      (e.stderr or e.stdout or "").strip())
 
 def self_update(repo_dir: str | Path = "."):
     rebase_onto_upstream(Path(repo_dir).resolve())
@@ -135,4 +136,4 @@ def self_push_all(repo_target: str | Path = "."):
 if __name__ == "__main__":
     # Always rebase-based update; never merge.
     # self_update()
-    self_push_all(["GitHandler.py", "FileHandler.py"])
+    self_push_all(["Operations/all_job_lots.pkl", "FileHandler.py", "Item.py", "Product.py", "JobLot.py", "LotProcessor.py", "BeautyItemProcessor.py", "Main.py"])

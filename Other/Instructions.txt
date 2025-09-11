@@ -1,0 +1,101 @@
+Welcome to Ecommerce Companion
+
+This program is designed to help you research, analyze, and evaluate
+eBay job lots and items with speed and accuracy.
+
+When you open the program, you’ll have the following options:
+
+1.  Automatic Job Lot Search – Search eBay for job lots automatically.
+    The program will scan and evaluate them, providing estimated
+    buy/sell prices and a detailed item breakdown.
+
+2.  Market Value Estimator – Enter an item’s name, and the program will
+    analyze live eBay data to estimate its current market value.
+
+3.  Analyze Job Lots via Link – Paste an eBay link, and the program will
+    analyze the listing (including images) to estimate buy/sell prices
+    and item breakdowns.
+
+4.  Analyze Job Lots via Image – Upload an image, and the program will
+    generate estimated buy/sell prices and item breakdowns.
+
+5.  Open Extracted Information Folder – Access a local folder where data
+    from options 1, 3, and 4 is stored.
+
+6.  View Instructions – Open this file to review how to use the program.
+
+7.  Edit Settings – Adjust the program to your preferences.
+
+8.  Exit Program – Safely close the program and save all collected data.
+
+⚠️ Important: Always exit using option 8. Manually closing the program
+may cause unsaved data to be lost.
+
+------------------------------------------------------------------------
+
+Extracted Information Folder
+
+The Extracted Information Folder organizes collected data into
+subfolders, each named by the date it was created.
+
+Inside each subfolder, you’ll find .txt files named with the exact time
+they were generated. Each file contains:
+
+-   Job lot information
+-   Details of items within each job lot
+-   Products used for item analysis
+
+------------------------------------------------------------------------
+
+Job Lot Data
+
+For each job lot, the following details are provided:
+
+-   Lot Name – The eBay listing title.
+-   Rating – A performance score (higher = better), based on accuracy,
+    sell price, and profit.
+-   Profit – Calculated as:
+    Profit = Sell Price − Buy Listing Price
+-   Accuracy Score – Indicates how reliable the profit, buy price, and
+    sell price estimates are.
+-   Buy Listing Price – The purchase price of the job lot (including
+    postage).
+-   Sell Price – The estimated total resale value, calculated as the sum
+    of estimated sell prices for all items.
+-   Web URL – A direct link to the job lot listing.
+
+------------------------------------------------------------------------
+
+Item Data
+
+For each item within a job lot, the following details are included:
+
+-   Item Name – The identified name of the item.
+-   Quantity – The number of units in the lot.
+-   Total Price – Calculated as:
+    Total Price = Sell Price + Postage Price + Buyer Protection Fee
+-   Sell Price – The estimated resale value.
+-   Postage Price – The estimated shipping cost.
+-   Buyer Protection Fee – A fee applied based on the sell price.
+-   Accuracy Score – Reliability of the sell price and postage price
+    estimates.
+-   Name Certainty – Confidence level that the identified item name is
+    correct.
+
+------------------------------------------------------------------------
+
+Product Data
+
+For each product used in item analysis, the following details are
+provided:
+
+-   Buy Price – The purchase price.
+-   Postage Price – The shipping cost (may be estimated, and less
+    reliable than the buy price).
+-   Accuracy Score – Indicates how closely the product matches the
+    identified item (based on name similarity).
+-   Web URL – A direct link to the product listing.
+
+------------------------------------------------------------------------
+
+✨ Good luck on your ecommerce journey!

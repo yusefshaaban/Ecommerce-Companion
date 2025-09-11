@@ -234,13 +234,13 @@ class ItemProcessor():
         postage_price = self.currency_converter.convert(postage_value, postage_currency) if postage_value and postage_currency else 0
         postage_price = float(postage_price) if float(postage_price) else 0
 
-        listing_price = round(price + postage_price, 2)
+        total_price = round(price + postage_price, 2)
 
         product = Product(
             name=name,
             brand_name="",
             web_url=web_url,
-            listing_price=round(listing_price, 2),
+            total_price=round(total_price, 2),
             buy_price=round(price, 2),
             postage_price=postage_price,
             accuracy_score=(1 - acc_penalty) * 100,  # Initial accuracy before product-level processing.
@@ -280,19 +280,19 @@ class ItemProcessor():
                     calc.calculate_buyer_protection_fee(item)
                     calc.calculate_postage_price(item)
 
-                    # listing_price = sell + postage + buyer protection (current values).
-                    item.listing_price = round(item.sell_price + item.postage_price + item.buyer_protection_fee, 2)
+                    # total_price = sell + postage + buyer protection (current values).
+                    item.total_price = round(item.sell_price + item.postage_price + item.buyer_protection_fee, 2)
                     return
 
 
     def create_accuracy(self, score, item):
         """
-        Returns products with accuracy >= `score`, sorted by listing_price ascending.
+        Returns products with accuracy >= `score`, sorted by total_price ascending.
         This helps downstream logic reason about "closest" price points for a given confidence level.
         """
         accuracy_sorted = list(sorted(
             filter(lambda p: p.accuracy_score >= score, item.products),
-            key=lambda p: p.listing_price
+            key=lambda p: p.total_price
         ))
 
         return accuracy_sorted
@@ -313,7 +313,7 @@ if __name__ == "__main__":
     item_processor.process(item, params)
     n = 0
     for product in item.products:
-        print(f"{n}. Product: {product.name}, Listing Price: {product.listing_price}, Buy Price: {product.buy_price}, Postage Price: {product.postage_price}, Accuracy Score: {product.accuracy_score}, web_url: {product.web_url}\n")
+        print(f"{n}. Product: {product.name}, Listing Price: {product.total_price}, Buy Price: {product.buy_price}, Postage Price: {product.postage_price}, Accuracy Score: {product.accuracy_score}, web_url: {product.web_url}\n")
         n += 1
     print(item)
 

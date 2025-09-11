@@ -20,7 +20,7 @@ Version notes
 
 # Standard library / third-party imports
 import numpy as np
-from Product import Product  # Expects fields: listing_price, postage_price, buy_price, accuracy_score, etc.
+from Product import Product  # Expects fields: total_price, postage_price, buy_price, accuracy_score, etc.
 
 # --- Tunable heuristics / business rules ---
 CHEAPNESS_AGGRESSION = 4           # Lower => choose a cheaper quantile when picking "closest" price (index len//N of sorted list).
@@ -54,7 +54,7 @@ def calculate_price_and_score90(item, accuracy90):
 
     # Heuristic anchor: treat the first product as "closest" and use its listing price.
     # (Assumes incoming `accuracy90` is pre-sorted by descending similarity/quality.)
-    closest_price = accuracy90[0].listing_price
+    closest_price = accuracy90[0].total_price
 
     # Collect positive postage prices and average them.
     postage_prices = [p.postage_price for p in accuracy90 if p.postage_price > 0]
@@ -106,12 +106,12 @@ def calculate_price_and_score(item, accuracy_above, working_accuracy, score):
         products_below = list(
             sorted(
                 (p for p in item.products if p.accuracy_score > score * PRODUCTS_BELOW_MULTIPLIER),
-                key=lambda p: p.listing_price,
+                key=lambda p: p.total_price,
             )
         )
 
         # Extract prices/postage from those filtered products.
-        products_below_prices = [p.listing_price for p in products_below]
+        products_below_prices = [p.total_price for p in products_below]
         postage_below_prices = [p.postage_price for p in products_below]
 
         # If `score` is nonzero but no qualifying "below" products exist, return early.
@@ -131,19 +131,19 @@ def calculate_price_and_score(item, accuracy_above, working_accuracy, score):
         # Anchor a synthetic product price halfway toward the above-mean (incl. postage),
         # falling back to the below-group medians when `accuracy_above` is empty.
         if len(accuracy_above) > 0:
-            price_above_mean = round(float(np.mean([p.listing_price + p.postage_price for p in accuracy_above])), 2)
-            temp_product_listing_price = round(
+            price_above_mean = round(float(np.mean([p.total_price + p.postage_price for p in accuracy_above])), 2)
+            temp_product_total_price = round(
                 products_below_prices_median + abs((products_below_prices_median - price_above_mean) / 2), 2
             )
             temp_product_postage_price = 0
         else:
-            temp_product_listing_price = products_below_prices_median
+            temp_product_total_price = products_below_prices_median
             temp_product_postage_price = products_below_postage_prices_median
 
         # Add a synthetic product to bias the working set toward a sensible midpoint.
         temp_product = Product(
             "temp", "web_url",
-            listing_price=temp_product_listing_price,
+            total_price=temp_product_total_price,
             accuracy_score=score,
             postage_price=temp_product_postage_price,
         )
@@ -178,7 +178,7 @@ def set_item_attributes(item, working_accuracy):
     closest_price, accuracy_score, avg_postage_price = 0, 0, 0
 
     # Sort by listing price to enable cheap-quantile selection and postage quantile.
-    working_accuracy.sort(key=lambda p: p.listing_price)
+    working_accuracy.sort(key=lambda p: p.total_price)
 
     # Representative (low-ish) postage as a quantile index into sorted positives.
     # With CHEAPNESS_AGGRESSION=4, this approximates the ~25th percentile.
@@ -190,16 +190,16 @@ def set_item_attributes(item, working_accuracy):
         if product.postage_price == 0:
             product.postage_price = avg_postage_price
 
-        product.buy_price = round(product.listing_price - product.postage_price, 2)
-        product.listing_price = round(product.buy_price + product.postage_price, 2)
+        product.buy_price = round(product.total_price - product.postage_price, 2)
+        product.total_price = round(product.buy_price + product.postage_price, 2)
 
     # Keep item.products in sync for downstream consumers.
     for product in item.products:
         if product.postage_price == 0:
             product.postage_price = avg_postage_price
 
-        product.buy_price = round(product.listing_price - product.postage_price, 2)
-        product.listing_price = round(product.buy_price + product.postage_price, 2)
+        product.buy_price = round(product.total_price - product.postage_price, 2)
+        product.total_price = round(product.buy_price + product.postage_price, 2)
 
     # Pick a "closest" price as a cheap quantile of buy prices (aggressive undercutting).
     closest_price = working_accuracy[(len(working_accuracy) // CHEAPNESS_AGGRESSION)].buy_price if working_accuracy else 0
@@ -328,7 +328,7 @@ def set_scores(item):
         4) Compute `price_quality`: higher when accuracy is high and price is low.
 
     Args:
-        item: Item to mutate (reads accuracy_score, num_products, name_certainty, listing_price).
+        item: Item to mutate (reads accuracy_score, num_products, name_certainty, total_price).
     """
     # (1) Nonlinear compression: keep ordering but reduce extremes.
     item.accuracy_score = 100 * ((item.accuracy_score / 100) ** 0.5)
@@ -349,5 +349,5 @@ def set_scores(item):
 
     # (4) A normalized "value" metric: higher accuracy and lower price => higher score.
     item.price_quality = (
-        ((item.accuracy_score - certainty_penalty) / item.listing_price) ** 1.1 if item.listing_price > 0 else 0
+        ((item.accuracy_score - certainty_penalty) / item.total_price) ** 1.1 if item.total_price > 0 else 0
     )

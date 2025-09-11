@@ -142,6 +142,12 @@ class JobLotsCreator:
         if job_lot not in all_job_lots:
             self.file_handler.append_object("./Operations/all_job_lots.pkl", job_lot)
         working_job_lots = self.file_handler.load_object("./Operations/working_job_lots.pkl")
-        if job_lot not in working_job_lots:
+        if job_lot not in working_job_lots or job_lot.rating == 0:
             self.file_handler.append_object("./Operations/working_job_lots.pkl", job_lot)
         self.file_handler.write_sorted('./Operations/working_job_lots.pkl')
+
+if __name__ == "__main__":
+    creator = JobLotsCreator()
+    # Example usage (uncomment to test):
+    exists = creator.check_job_lot_exists('v1|267075364121|0', 28.79, 0.0)
+    print("Exists:", exists)

@@ -268,23 +268,6 @@ class FileHandler:
                 self.write_product(job_lot, file)
                 n += 1
 
-        # Normalize line endings/indentation to improve cross-platform readability
-        with open(f"./Extracted_Info/{self.current_date}/{self.current_time}.txt", "r", encoding="utf-8") as file:
-            content = file.read()
-
-        normalized, stats = normalize_text(
-            text=content,
-            indent="spaces",         # or "tabs" or "keep"
-            tabsize=4,
-            eol="crlf",              # "lf" for Linux/Mac, "crlf" for Windows Notepad
-            strip_trailing=True,
-            ensure_final_newline=True,
-            convert_all_tabs=False,
-        )
-
-        # Write normalized content back to the same file. newline="" preserves CRLF.
-        with open(f"./Extracted_Info/{self.current_date}/{self.current_time}.txt", "w", encoding="utf-8", newline="") as file:
-            file.write(normalized)
         print("Info has been saved")
 
     def write_progress(self, job_lot):
@@ -415,7 +398,8 @@ class FileHandler:
 if __name__ == "__main__":
     file_handler = FileHandler()
     lots = file_handler.load_object("./Operations/all_job_lots.pkl")
-    print(len(lots))
+    lot = lots[222]
+    print(f"lot id: {lot.id}, lot listing price: {lot.buy_listing_price}, lot postage price: {lot.postage_price}")
     # objects_to_remove = [
     #     "110 Cosmetic Wholesale Makeup skincare Joblot Beauty Bundle Make up NEW",
     #     "Nivea FEEL PAMPERED Skincare Regime Bath & Body Gift Set - Cream Shower Gel Deo",

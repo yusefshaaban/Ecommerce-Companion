@@ -104,10 +104,7 @@ class EbayJobLotsCreator(JobLotsCreator):
             if super().check_job_lot_exists(id, listing_price, postage_price):
                 continue
             lot = self.process(lot)
-            if lot.rating > 0:
-                super().write(lot)
-            else:
-                print(f"Lot discarded due to zero rating.")
+            super().write(lot)
 
     def create_custom(self, searches):
         """

@@ -226,7 +226,7 @@ class Main:
 
         elif choice == "8":
             print("Exiting the program.")
-            GitHandler.self_push_all("Operations/all_job_lots.pkl")
+            GitHandler.self_push_all(["Operations/all_job_lots.pkl", "Operations/searches.txt"])
             return
         
         else:
@@ -248,7 +248,7 @@ class Main:
         for search in searches.split("\n"):
             search = search.strip()
             if search:
-                self.ebayJobLotsCreator.create(search, 5)
+                self.ebayJobLotsCreator.create(search, 10)
 
     def edit_auto_searches(self):
         """

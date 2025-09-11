@@ -138,5 +138,8 @@ def self_push_all(repo_target: str | Path | Iterable[str | Path] = "."):
 
 if __name__ == "__main__":
     # Any of these forms now work:
-    self_push_all("Operations/all_job_lots.pkl, Main.py, GitHandler.py")
+    self_push_all("Operations/all_job_lots.pkl, " \
+    "Main.py, " \
+    "GitHandler.py, " \
+    "EbayJobLotsCreator.py")
     # self_push_all("Main.py")

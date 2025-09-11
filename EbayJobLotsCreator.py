@@ -125,7 +125,6 @@ class EbayJobLotsCreator(JobLotsCreator):
         - Refreshes working job lots.
         - Writes new processed lots to storage.
         """
-        self.file_handler.refresh_working_job_lots()
         domains = ('.com', '.co.uk', '.de', '.fr', '.es', '.it')
         if any((domain) in searches.lower() for domain in domains):
             links = searches.split(',')

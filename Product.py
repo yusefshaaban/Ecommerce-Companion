@@ -6,7 +6,7 @@ from typing import List, Any
 class Product:
     name: str
     web_url: str
-    listing_price: float = 0.0
+    total_price: float = 0.0
     brand_name: str = "brand"
     variant_name: str = "variant"
     original_name: str = "name"

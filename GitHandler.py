@@ -1,21 +1,22 @@
 import subprocess
 from pathlib import Path
+from typing import Iterable
 
 def sh(args, cwd="."):
     return subprocess.run(args, cwd=cwd, check=True, capture_output=True, text=True)
 
 def in_progress(repo: Path) -> bool:
-    # Detect ongoing rebase/merge/cherry-pick
     try:
         out = sh(["git", "status", "--porcelain", "--branch"], cwd=repo).stdout
     except subprocess.CalledProcessError:
         return True
-    markers = ( "rebase in progress", "rebase-i", "rebase-m", "merge in progress",
-                "cherry-pick in progress", "bisect in progress" )
+    markers = (
+        "rebase in progress", "rebase-i", "rebase-m",
+        "merge in progress", "cherry-pick in progress", "bisect in progress"
+    )
     return any(m in out.lower() for m in markers)
 
 def current_branch(repo: Path) -> str | None:
-    # None if detached
     out = sh(["git", "symbolic-ref", "--short", "-q", "HEAD"], cwd=repo).stdout.strip()
     return out or None
 
@@ -46,7 +47,7 @@ def self_update(repo_dir: str | Path = "."):
     if not has_upstream(repo):
         if remote_has_branch(repo, "origin", branch):
             sh(["git", "branch", "--set-upstream-to", f"origin/{branch}", branch], cwd=repo)
-        # else: leave unset; first push will set it.
+        # else leave unset; first push will set it
 
     # Stash if dirty
     had_stash = False
@@ -56,7 +57,6 @@ def self_update(repo_dir: str | Path = "."):
 
     update_ok = False
     try:
-        protected = [".env"]
         sh(["git", "fetch", "--prune"], cwd=repo)
         try:
             sh(["git", "merge", "--ff-only", "@{u}"], cwd=repo)
@@ -64,35 +64,66 @@ def self_update(repo_dir: str | Path = "."):
         except subprocess.CalledProcessError:
             sh(["git", "rebase", "@{u}"], cwd=repo)
             update_ok = True
-            sh(["git", "stash", "pop", protected], cwd=repo) if had_stash else None
     finally:
+        # Reapply only if we actually updated cleanly and had stashed changes
         if had_stash and update_ok:
-            # Reapply only if we actually updated cleanly
+            # Pop once; if conflicts, Git will say so
             subprocess.run(["git", "stash", "pop"], cwd=repo)
 
-def self_push_all(repo_target: str | Path = "."):
-    target_path = Path(repo_target).resolve()
-    repo_dir = target_path.parent if target_path.is_file() else target_path
+def _ensure_iterable_targets(repo_target: str | Path | Iterable[str | Path]) -> list[Path]:
+    """
+    Normalize targets. Accept:
+      - a Path
+      - a string path
+      - a list/tuple of paths
+      - a single string with commas -> split on commas
+    """
+    if isinstance(repo_target, (str, Path)):
+        # If it's a single string, allow "a,b,c" and split on commas
+        if isinstance(repo_target, str) and "," in repo_target:
+            parts = [p.strip() for p in repo_target.split(",") if p.strip()]
+            return [Path(p) for p in parts]
+        return [Path(repo_target)]
+    else:
+        return [Path(p) for p in repo_target]
 
-    sh(["git", "rev-parse", "--is-inside-work-tree"], cwd=repo_dir)
-    repo_root = Path(sh(["git", "rev-parse", "--show-toplevel"], cwd=repo_dir).stdout.strip())
+def self_push_all(repo_target: str | Path | Iterable[str | Path] = "."):
+    targets = _ensure_iterable_targets(repo_target)
 
-    to_add = str(target_path.relative_to(repo_root)) if target_path.is_file() else "."
-    sh(["git", "add", to_add], cwd=repo_root)
+    # Use the first target to discover the repo root
+    first = targets[0].resolve()
+    probe_dir = first.parent if first.exists() and first.is_file() else first
+    sh(["git", "rev-parse", "--is-inside-work-tree"], cwd=probe_dir)
+    repo_root = Path(sh(["git", "rev-parse", "--show-toplevel"], cwd=probe_dir).stdout.strip())
 
-# test
+    # Stage all targets (relative to repo root)
+    args = ["git", "add"]
+    for t in targets:
+        t_abs = t.resolve()
+        if t_abs.is_file():
+            rel = t_abs.relative_to(repo_root)
+        else:
+            # If it doesn't exist yet or is a directory, add as given (relative or absolute)
+            try:
+                rel = t_abs.relative_to(repo_root)
+            except ValueError:
+                # If outside repo, this will fail later; but keep as-is
+                rel = t
+        args.append(str(rel))
+    sh(args, cwd=repo_root)
+
     committed = False
     try:
-        sh(["git", "commit", "-m", '\"Auto-commit job lots\"'], cwd=repo_root)
+        sh(["git", "commit", "-m", "Auto-commit job lots"], cwd=repo_root)
         committed = True
     except subprocess.CalledProcessError as e:
-        if "nothing to commit" in (e.stdout + e.stderr).lower():
+        msg = (e.stdout or "") + (e.stderr or "")
+        if "nothing to commit" in msg.lower() or "your branch is up to date" in msg.lower():
             print("No changes to commit.")
         else:
             raise
 
     if committed:
-        # Ensure there is an upstream; if not, set it on first push
         branch = current_branch(repo_root) or "main"
         if has_upstream(repo_root):
             try:
@@ -108,4 +139,6 @@ def self_push_all(repo_target: str | Path = "."):
                 print("Push failed:", e.stderr or e.stdout)
 
 if __name__ == "__main__":
-    self_push_all("GitHandler.py")
+    # Any of these forms now work:
+    self_push_all("Operations/all_job_lots.pkl, Main.py, GitHandler.py")
+    # self_push_all("Main.py")

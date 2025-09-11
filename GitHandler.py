@@ -142,8 +142,8 @@ if __name__ == "__main__":
     # self_update()
     self_push_all("GitHandler.py")
     # Any of these forms now work:
-    self_push_all("Operations/all_job_lots.pkl, " \
-    "Main.py, " \
-    "GitHandler.py, " \
-    "EbayJobLotsCreator.py")
+    # self_push_all("Operations/all_job_lots.pkl, " \
+    # "Main.py, " \
+    # "GitHandler.py, " \
+    # "EbayJobLotsCreator.py")
     # self_push_all("Main.py")

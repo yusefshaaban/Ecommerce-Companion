@@ -117,6 +117,8 @@ def self_push_all(repo_target: str | Path | Iterable[str | Path] = "."):
         sh(["git", "commit", "-m", "Auto-commit job lots"], cwd=repo_root)
         committed = True
     except subprocess.CalledProcessError as e:
+        if "nothing to commit" in (e.stdout + e.stderr).lower() or "your branch is up to date" in (e.stdout + e.stderr).lower():
+            print("No changes to commit.")
         msg = (e.stdout or "") + (e.stderr or "")
         if "nothing to commit" in msg.lower() or "your branch is up to date" in msg.lower():
             pass  # No changes to commit
@@ -137,6 +139,8 @@ def self_push_all(repo_target: str | Path | Iterable[str | Path] = "."):
                 print("Push failed:", e.stderr or e.stdout, "Please contact the developer.")
 
 if __name__ == "__main__":
+    # self_update()
+    self_push_all("GitHandler.py")
     # Any of these forms now work:
     self_push_all("Operations/all_job_lots.pkl, " \
     "Main.py, " \

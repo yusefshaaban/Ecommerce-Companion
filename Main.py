@@ -11,6 +11,7 @@ from Item import Item
 from ItemProcessor import ItemProcessor
 from FileHandler import FileHandler
 from ItemNameExtractor import ItemNameExtractor
+import GitHandler
 
 
 """
@@ -69,6 +70,7 @@ class Main:
         self.file_handler = FileHandler()
         self.item_processor = ItemProcessor()
         self.item_name_extractor = ItemNameExtractor()
+        GitHandler.self_update()
 
         # Create ONE Tk root and keep it hidden
         try:
@@ -224,6 +226,7 @@ class Main:
 
         elif choice == "8":
             print("Exiting the program.")
+            GitHandler.self_push_all("Operations/all_job_lots.pkl")
             return
         
         else:

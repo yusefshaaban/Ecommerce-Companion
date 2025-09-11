@@ -414,26 +414,28 @@ class FileHandler:
 
 if __name__ == "__main__":
     file_handler = FileHandler()
-    objects_to_remove = [
-        "110 Cosmetic Wholesale Makeup skincare Joblot Beauty Bundle Make up NEW",
-        "Nivea FEEL PAMPERED Skincare Regime Bath & Body Gift Set - Cream Shower Gel Deo",
-        "Mixed branded, make up hair & beauty bundle.",
-        "NIVEA Feel Flawless Women's Gift Set with Skincare Essentials 4 Products",
-        "15 item Luxury Beauty gift box bundle, Skincare, Present - RRP £100-UK Seller",
-        "MAKE UP BUNDLE SKINCARE WHOLESALE JOBLOT MAKEUP CHRISTMAS GIFT - 15 ITEMS NEW",
-        "Job Lot Beauty Products See Picture & Description & Cult Beauty Makeup Bag  - BN",
-        "Make up Bundle Make-up Skincare Joblot Christmas Gift Makeup  RRP £100+ 30 Items",
-        "Beauty Bundle - 8 Items - Kanzen, Collection, Halo RRP £50",
-        "Mixed Lot Beauty Bundle Products Skin Care Body Face SO UNIQUE DOVE IPANEMA 72",
-        "Below The Belt Ballers Duo Gift Set Fresh & Dry Balls Fresh & Cool 2 x 75ml",
-        "9 Item Beauty Bundle...New.",
-        "SodaStream 2 x Older Style Plastic Bottles (Used) + Brand‑New Pepsi BUNDLE",
-        "Ladies Pamper Hamper Gift Spa Box Set For Her Personalised Letterbox Gift",
-        "Beauty Bundle/Joblot Including Lip Balm Lipstick and Magnetic Lashes, Read Descr",
-        "NEW MINT JOB LOT OF 2 STORY OF SUN RECORDS  BOX SETS 6 CDS IN TOTAL",
-        "20X BRAND NEW ITEMS Clearance Sale Pallet Wholesale Box JOB LOT Warehouse Stock",
-        "Job Lot Box- Random Cosmetics Clearance & Beauty 10+ Items Worth £40+ Brand New"
-    ]
+    lots = file_handler.load_object("./Operations/working_job_lots.pkl")
+    print(len(lots))
+    # objects_to_remove = [
+    #     "110 Cosmetic Wholesale Makeup skincare Joblot Beauty Bundle Make up NEW",
+    #     "Nivea FEEL PAMPERED Skincare Regime Bath & Body Gift Set - Cream Shower Gel Deo",
+    #     "Mixed branded, make up hair & beauty bundle.",
+    #     "NIVEA Feel Flawless Women's Gift Set with Skincare Essentials 4 Products",
+    #     "15 item Luxury Beauty gift box bundle, Skincare, Present - RRP £100-UK Seller",
+    #     "MAKE UP BUNDLE SKINCARE WHOLESALE JOBLOT MAKEUP CHRISTMAS GIFT - 15 ITEMS NEW",
+    #     "Job Lot Beauty Products See Picture & Description & Cult Beauty Makeup Bag  - BN",
+    #     "Make up Bundle Make-up Skincare Joblot Christmas Gift Makeup  RRP £100+ 30 Items",
+    #     "Beauty Bundle - 8 Items - Kanzen, Collection, Halo RRP £50",
+    #     "Mixed Lot Beauty Bundle Products Skin Care Body Face SO UNIQUE DOVE IPANEMA 72",
+    #     "Below The Belt Ballers Duo Gift Set Fresh & Dry Balls Fresh & Cool 2 x 75ml",
+    #     "9 Item Beauty Bundle...New.",
+    #     "SodaStream 2 x Older Style Plastic Bottles (Used) + Brand‑New Pepsi BUNDLE",
+    #     "Ladies Pamper Hamper Gift Spa Box Set For Her Personalised Letterbox Gift",
+    #     "Beauty Bundle/Joblot Including Lip Balm Lipstick and Magnetic Lashes, Read Descr",
+    #     "NEW MINT JOB LOT OF 2 STORY OF SUN RECORDS  BOX SETS 6 CDS IN TOTAL",
+    #     "20X BRAND NEW ITEMS Clearance Sale Pallet Wholesale Box JOB LOT Warehouse Stock",
+    #     "Job Lot Box- Random Cosmetics Clearance & Beauty 10+ Items Worth £40+ Brand New"
+    # ]
     
     # file_handler.remove_object("./Operations/working_job_lots.pkl", objects_to_remove)
     # file_handler.remove_object("./Operations/all_job_lots.pkl", objects_to_remove)

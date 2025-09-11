@@ -65,12 +65,12 @@ class Main:
         root : tk.Tk | None
             Hidden Tk root for file dialogs; None in headless environments.
         """
+        GitHandler.self_update()
         self.ebayJobLotsCreator = EbayJobLotsCreator()
         self.customJobLotsCreator = CustomJobLotsCreator()
         self.file_handler = FileHandler()
         self.item_processor = ItemProcessor()
         self.item_name_extractor = ItemNameExtractor()
-        GitHandler.self_update()
 
         # Create ONE Tk root and keep it hidden
         try:

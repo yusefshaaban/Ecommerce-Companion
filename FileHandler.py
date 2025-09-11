@@ -414,7 +414,7 @@ class FileHandler:
 
 if __name__ == "__main__":
     file_handler = FileHandler()
-    lots = file_handler.load_object("./Operations/working_job_lots.pkl")
+    lots = file_handler.load_object("./Operations/all_job_lots.pkl")
     print(len(lots))
     # objects_to_remove = [
     #     "110 Cosmetic Wholesale Makeup skincare Joblot Beauty Bundle Make up NEW",

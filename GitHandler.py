@@ -5,9 +5,6 @@ def sh(args, cwd="."):
     try:
         res = subprocess.run(args, cwd=cwd, check=True, capture_output=True, text=True)
     except subprocess.CalledProcessError as e:
-        print(f"Error occurred while running command: {e}")
-        print(f"Stdout: {e.stdout}")
-        print(f"Stderr: {e.stderr}")
         return e
     return res
 
@@ -53,24 +50,27 @@ def rebase_onto_upstream(repo: Path):
 
     # Stash if dirty, then rebase
     dirty = bool(sh(["git", "status", "--porcelain"], cwd=repo).stdout.strip())
-    if dirty:
-        sh(["git", "stash", "push", "--include-untracked", "-m", "autostash-before-rebase"], cwd=repo)
+    sh(["git", "stash", "push", "--include-untracked", "-m", "autostash-before-rebase"], cwd=repo)
 
     try:
         # Always rebase, never merge
         sh(["git", "rebase", "@{u}"], cwd=repo)
     finally:
-        if dirty:
-            try:
-                sh(["git", "stash", "pop"], cwd=repo)
-            except subprocess.CalledProcessError as e:
-                print("Stash pop had conflicts; leaving changes to resolve. ",
-                      (e.stderr or e.stdout or "").strip())
+        try:
+            sh(["git", "stash", "pop"], cwd=repo)
+        except subprocess.CalledProcessError as e:
+            # print("Stash pop had conflicts; leaving changes to resolve. ",
+            #       (e.stderr or e.stdout or "").strip())
+            pass
 
 def self_update(repo_dir: str | Path = "."):
     rebase_onto_upstream(Path(repo_dir).resolve())
 
 def self_push_all(repo_target: str | Path = "."):
+    if isinstance(repo_target, list):
+        for p in repo_target:
+            self_push_all(p)
+        return
     target_path = Path(repo_target).resolve()
     repo_dir = target_path.parent if target_path.is_file() else target_path
 
@@ -87,7 +87,8 @@ def self_push_all(repo_target: str | Path = "."):
     except subprocess.CalledProcessError as e:
         msg = (e.stdout or "") + (e.stderr or "")
         if "nothing to commit" in msg.lower() or "your branch is up to date" in msg.lower():
-            print("No changes to commit.")
+            # print("No changes to commit.")
+            pass
         else:
             raise
 
@@ -105,7 +106,7 @@ def self_push_all(repo_target: str | Path = "."):
     # 1) Try normal push
     try:
         push(set_up=True)
-        print("Pushed successfully.")
+        # print("Pushed successfully.")
         return
     except subprocess.CalledProcessError as e1:
         msg1 = (e1.stdout or "") + (e1.stderr or "")
@@ -115,15 +116,15 @@ def self_push_all(repo_target: str | Path = "."):
             sh(["git", "pull", "--rebase", "--autostash"], cwd=repo_root)
             try:
                 push()
-                print("Pushed successfully after rebase.")
+                # print("Pushed successfully after rebase.")
                 return
             except subprocess.CalledProcessError as e2:
-                print("Normal push still failed after rebase:",
-                      ((e2.stderr or e2.stdout or "").strip()))
+                # print("Normal push still failed after rebase:",
+                #       ((e2.stderr or e2.stdout or "").strip()))
                 # 3) Last resort: push anyway but safely
                 try:
                     push(force=True)
-                    print("Force-pushed with lease after rebase.")
+                    # print("Force-pushed with lease after rebase.")
                     return
                 except subprocess.CalledProcessError as e3:
                     raise RuntimeError("Force-with-lease push failed:\n" +
@@ -134,4 +135,4 @@ def self_push_all(repo_target: str | Path = "."):
 if __name__ == "__main__":
     # Always rebase-based update; never merge.
     # self_update()
-    self_push_all("GitHandler.py")
+    self_push_all(["GitHandler.py", "FileHandler.py"])

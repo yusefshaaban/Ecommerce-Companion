@@ -16,7 +16,7 @@ class Item:
     measurements: List[Any] = field(default_factory=list)
     accuracy_score: float = 100.0
     products: List[Any] = field(default_factory=list)
-    listing_price: float = 0.0
+    total_price: float = 0.0
     sell_price: float = 0.0
     sell_cost: float = 0.0
     buyer_protection_fee: float = 0.0
@@ -41,7 +41,7 @@ class Item:
         item_str = (
             f"Item Name = {self.original_name}, "
             f"Quantity = {quantity}, "
-            f"Listing Price = £{self.listing_price:.2f}, "
+            f"Total Price = £{self.total_price:.2f}, "
             f"Sell Price = £{self.sell_price:.2f}, "
             f"Buyer Protection Fee = £{self.buyer_protection_fee:.2f}, "
             f"Postage Price = £{self.postage_price:.2f}, "

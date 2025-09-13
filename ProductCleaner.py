@@ -78,25 +78,16 @@ class ProductCleaner(GoodCleaner):
           * Compose `product.name` as "brand variant" (trimmed).
           * Preserve originals in `original_brand_name`/`original_variant_name`.
         """
-        # If blank/placeholder, copy from product.name so we have a working variant.
-        if product.variant_name == "" or product.variant_name == "variant":
-            product.variant_name = product.name
+        if item.brand_name == "" or item.brand_name == "brand" or item.brand_name == "":
+            # No brand data on the item -> unknown brand for product.
+            product.brand_name = ""
 
-        if product.brand_name == "" or product.brand_name == "brand":
-            if item.brand_name != "":
-                if item.brand_name.lower() in product.name.lower():
-                    # Snap brand to the item's brand and remove it from the variant.
-                    product.brand_name = ""
-                    product.brand_name = item.brand_name
-                    product.variant_name = re.sub(
-                        rf'\b{re.escape(item.brand_name)}\b', ' ', product.name, flags=re.IGNORECASE
-                    ).strip()
-                else:
-                    # Brand present in item but not found in product name -> unknown brand for product.
-                    product.brand_name = ""
-            else:
-                # No brand data on the item -> unknown brand for product.
-                product.brand_name = ""
+        elif item.brand_name.lower() in product.name.lower():
+            # Snap brand to the item's brand and remove it from the variant.
+            product.brand_name = item.brand_name
+            product.variant_name = re.sub(
+                rf'\b{re.escape(item.brand_name)}\b', ' ', product.name, flags=re.IGNORECASE
+            ).strip()
 
         product.name = f"{product.brand_name} {product.variant_name}".strip()
         product.original_brand_name = product.brand_name

@@ -65,7 +65,7 @@ class Main:
         root : tk.Tk | None
             Hidden Tk root for file dialogs; None in headless environments.
         """
-        GitHandler.self_update()
+        # GitHandler.self_update()
         self.ebayJobLotsCreator = EbayJobLotsCreator()
         self.customJobLotsCreator = CustomJobLotsCreator()
         self.file_handler = FileHandler()
@@ -248,7 +248,7 @@ class Main:
         for search in searches.split("\n"):
             search = search.strip()
             if search:
-                self.ebayJobLotsCreator.create(search, 10)
+                self.ebayJobLotsCreator.create(search, 3)
 
     def edit_auto_searches(self):
         """

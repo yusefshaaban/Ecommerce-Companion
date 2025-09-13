@@ -89,12 +89,12 @@ class ItemNameExtractor:
         print(f"extracted items: {items}")
         # Get the response text from the OpenAI API response
         items = re.sub(r'[^a-zA-Z0-9.:;\-&\s]', ' ', items)
-        items = re.sub(r'(?<!^);!\s*size(?:\:)', '', items, flags=re.IGNORECASE)
-        items = re.sub(r'(?<!^);!(?:\:)\s*color', '', items, flags=re.IGNORECASE)
-        items = re.sub(r'(?<!^);!(?:\:)\s*colour', '', items, flags=re.IGNORECASE)
-        items = re.sub(r'(?<!^);!(?:\:)\s*quantity', '', items, flags=re.IGNORECASE)
-        items = re.sub(r'(?<!^);!(?:\:)\s*certainty(?:\:)', '', items, flags=re.IGNORECASE)
-        items = re.sub(r'(?<!^);!\s*unknown', '', items, flags=re.IGNORECASE)
+        items = re.sub(r'(?<!^)(?:\:)\s*size(?:\:)', ' ', items, flags=re.IGNORECASE)
+        items = re.sub(r'(?<!^)(?:\:)\s*colour(?:\:)', ' ', items, flags=re.IGNORECASE)
+        items = re.sub(r'(?<!^)(?:\:)\s*color(?:\:)', ' ', items, flags=re.IGNORECASE)
+        items = re.sub(r'(?<!^)(?:\:)\s*quantity(?:\:)', ' ', items, flags=re.IGNORECASE)
+        items = re.sub(r'(?<!^)(?:\:)\s*certainty(?:\:)', ' ', items, flags=re.IGNORECASE)
+        items = re.sub(r'(?<!^)(?:\:)\s*unknown(?:\:)', ' ', items, flags=re.IGNORECASE)
         # Normalize "n/a" variations and then remove it
         items = re.sub(r'\s+n/a(:)?', r' na\1', items, flags=re.IGNORECASE)
         items = re.sub(r'\s+n/a(:)?', r' na\1', items, flags=re.IGNORECASE)

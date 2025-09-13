@@ -142,8 +142,14 @@ class JobLotsCreator:
         if job_lot not in all_job_lots:
             self.file_handler.append_object("./Operations/all_job_lots.pkl", job_lot)
         working_job_lots = self.file_handler.load_object("./Operations/working_job_lots.pkl")
-        if job_lot not in working_job_lots or job_lot.rating == 0:
+        if job_lot.rating < -100:
+            print("Rating is too low, discarding")
+        elif job_lot in working_job_lots:
+            print("Job lot is already in working set, discarding")
+        else:
             self.file_handler.append_object("./Operations/working_job_lots.pkl", job_lot)
+            print("Info has been updated")
+
         self.file_handler.write_sorted('./Operations/working_job_lots.pkl')
 
 if __name__ == "__main__":

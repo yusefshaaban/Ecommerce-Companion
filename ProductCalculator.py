@@ -497,7 +497,7 @@ def adjust_accuracy_for_end(item, product, item_token_set, product_token_set):
         else:
             product.accuracy_score *= .85
         filter = word_filterer.get_tag(item_token_set.variant_name_normalized[-1])
-        if word_filterer.is_key_word(product_token_set.variant_name_normalized[-1], [filter]):
+        if word_filterer.is_key_word(product_token_set.variant_name_normalized[-1], [filter] if len(product_token_set.variant_name_normalized) > 1 else [""]):
             product.accuracy_score *= .95
         else:
             product.accuracy_score *= .85

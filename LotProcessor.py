@@ -144,11 +144,15 @@ class LotProcessor:
         # Profit calculation; if buy_listing_price is unknown, profit defaults to 0.
         jobLot.profit = round(total_sell_price - (jobLot.buy_listing_price) if jobLot.buy_listing_price is not None else 0, 2)
 
-        # Rating rewards profitable lots; otherwise 0.
-        jobLot.rating = round((total_score) * (jobLot.profit ** 1.2), 2) if jobLot.profit > 0 else 0
+        # Rating rewards lots, and making sure rating always computes
+        if jobLot.profit <= 0:
+            n = -1
+        else:
+            n = 1
+        jobLot.rating = round(n * ((total_score) * ((n * (jobLot.profit)) ** 1.2)), 2) if jobLot.profit != 0 else 0
 
         # Average (quantity-weighted) accuracy across the lot.
-        jobLot.accuracy_score = round(total_accuracy_score / num_items, 2) if num_items > 0 else 0
+        jobLot.accuracy_score = round(total_accuracy_score / num_items, 2) if num_items != 0 else 0
 
         current_date = datetime.now().strftime("%d_%m_%Y")
 

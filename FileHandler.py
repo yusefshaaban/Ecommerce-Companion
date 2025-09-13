@@ -28,6 +28,11 @@ from normalize_text_indentation import normalize_text
 import pickle
 import os
 
+# Creates date- and time-based attributes:
+#         - CURRENT_DATE: str formatted as "DD_MM_YYYY"
+#         - CURRENT_TIME: str formatted as "HH-MM-SS"
+CURRENT_DATE = datetime.now().strftime("%d_%m_%Y")
+CURRENT_TIME = datetime.now().strftime("%H-%M-%S")
 
 class FileHandler:
     """
@@ -56,17 +61,11 @@ class FileHandler:
         """
         Initialize the handler and ensure required directories/files exist.
 
-        Creates date- and time-based attributes:
-            - self.current_date: str formatted as "DD_MM_YYYY"
-            - self.current_time: str formatted as "HH-MM-SS"
-
         Side effects:
             - Ensures the folder hierarchy exists (idempotent).
             - Touches/creates several operational files in append mode ('a') to
               guarantee their existence without truncating them.
         """
-        self.current_date = datetime.now().strftime("%d_%m_%Y")
-        self.current_time = datetime.now().strftime("%H-%M-%S")
 
         # Ensure directories exist
         os.makedirs('./Extracted_Info', exist_ok=True)
@@ -243,32 +242,31 @@ class FileHandler:
         )
 
         # Compose report path using current date/time
-        with open(f"./Extracted_Info/{self.current_date}/{self.current_time}.txt", "w", encoding="utf-8") as file:
-            file.write("Job Lots:"+"\n")
-            file.write("_" * 160 + "\n")
-            n = 1
-            for job_lot in job_lots:
-                file.write(f"{n}. ")
-                self.write_job_lot(job_lot, file)
-                n += 1
+        with open(f"./Extracted_Info/{CURRENT_DATE}/{CURRENT_TIME}.txt", "w", encoding="utf-8") as file:
+            if len(job_lots) > 0:
+                file.write("Job Lots:"+"\n")
+                file.write("_" * 160 + "\n")
+                n = 1
+                for job_lot in job_lots:
+                    file.write(f"{n}. ")
+                    self.write_job_lot(job_lot, file)
+                    n += 1
 
-            file.write("\n\nItems in Each Job Lot:\n")
-            file.write("_" * 161 + "\n")
-            n = 1
-            for job_lot in job_lots:
-                file.write(f"{n}. ")
-                self.write_item(job_lot, file)
-                n += 1
+                file.write("\n\nItems in Each Job Lot:\n")
+                file.write("_" * 161 + "\n")
+                n = 1
+                for job_lot in job_lots:
+                    file.write(f"{n}. ")
+                    self.write_item(job_lot, file)
+                    n += 1
 
-            file.write("\n\nProducts used to calculate item info:\n")
-            file.write("_" * 161 + "\n")
-            n = 1
-            for job_lot in job_lots:
-                file.write(f"{n}. ")
-                self.write_product(job_lot, file)
-                n += 1
-
-        print("Info has been saved")
+                file.write("\n\nProducts used to calculate item info:\n")
+                file.write("_" * 161 + "\n")
+                n = 1
+                for job_lot in job_lots:
+                    file.write(f"{n}. ")
+                    self.write_product(job_lot, file)
+                    n += 1
 
     def write_progress(self, job_lot):
         """
@@ -341,16 +339,16 @@ class FileHandler:
 
     def reset_current_time(self):
         """
-        Refresh `self.current_time` to the current clock time and touch a new output file.
+        Refresh `CURRENT_TIME` to the current clock time and touch a new output file.
 
         Side effects:
-            - Updates `self.current_time` to "HH-MM-SS".
+            - Updates `CURRENT_TIME` to "HH-MM-SS".
             - Opens (and implicitly creates) a new report file for the current date/time
               in append mode to prepare for subsequent writes.
         """
-        self.current_time = datetime.now().strftime("%H-%M-%S")
-        os.makedirs(f'./Extracted_Info/{self.current_date}/{self.current_time}', exist_ok=True)
-        f = open(f"./Extracted_Info/{self.current_date}/{self.current_time}.txt", "a")
+        CURRENT_TIME = datetime.now().strftime("%H-%M-%S")
+        os.makedirs(f'./Extracted_Info/{CURRENT_DATE}', exist_ok=True)
+        f = open(f"./Extracted_Info/{CURRENT_DATE}/{CURRENT_TIME}.txt", "a")
         f.write("No data yet.\n")
 
     def get_auto_searches(self):
